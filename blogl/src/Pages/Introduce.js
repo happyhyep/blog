@@ -46,6 +46,16 @@ export default function Introduce() {
                 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white"/> 
                 <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> 
             </div>
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '40px'}} >
+                <img src="https://img.shields.io/badge/figma-F24E1E?style=flat&logo=figma&logoColor=white"/>
+                <img src="https://img.shields.io/badge/styledComponents-DB7093?style=flat&logo=styled-components&logoColor=white"/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
+            </div>
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '40px'}} >
+                <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=black"/>
+                <img src="https://img.shields.io/badge/Adobe Premiere Pro-9999FF?style=flat&logo=Adobe Premiere Pro&logoColor=black"/>
+                <img src="https://img.shields.io/badge/Adobe After Effects-9999FF?style=flat&logo=Adobe After Effects&logoColor=black"/>
+            </div>
             <Footer/>
         </>
     )
