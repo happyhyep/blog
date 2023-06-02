@@ -32,7 +32,7 @@ export default function Introduce() {
                 <Contact>- 포항 장성 고등학교 (2018 ~ 2020)</Contact>
                 <Contact>- 경상북도교육청 과학 영재 교육원 (2019)</Contact>
             <div style={{display:"flex", justifyContent: 'space-between', alignItems: 'center', marginTop: '70px', marginBottom: '40px'}}><DashLine /><Happyhyep style={{width: '20%'}}>Skills</Happyhyep><DashLine /></div>
-            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '10px'}} >
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'170px', marginTop: '10px', marginBottom: '10px'}} >
                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
                 <img src="https://img.shields.io/badge/JS-F7DF1E?style=flat&logo=JavaScript&logoColor=black" />
                 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black" />
@@ -42,16 +42,16 @@ export default function Introduce() {
                 <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=C&logoColor=white"/>
                 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" />
             </div>
-            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '40px'}} >
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'175px', marginTop: '10px', marginBottom: '10px'}} >
                 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white"/> 
                 <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> 
             </div>
-            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '40px'}} >
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'250px', marginTop: '10px', marginBottom: '10px'}} >
                 <img src="https://img.shields.io/badge/figma-F24E1E?style=flat&logo=figma&logoColor=white"/>
                 <img src="https://img.shields.io/badge/styledComponents-DB7093?style=flat&logo=styled-components&logoColor=white"/>
                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
             </div>
-            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'200px', marginTop: '10px', marginBottom: '40px'}} >
+            <div style={{display:"flex",  justifyContent: 'space-between', margin: 'auto', width:'400px', marginTop: '10px', marginBottom: '10px'}} >
                 <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=black"/>
                 <img src="https://img.shields.io/badge/Adobe Premiere Pro-9999FF?style=flat&logo=Adobe Premiere Pro&logoColor=black"/>
                 <img src="https://img.shields.io/badge/Adobe After Effects-9999FF?style=flat&logo=Adobe After Effects&logoColor=black"/>
