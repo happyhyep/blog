@@ -12,7 +12,7 @@ export default function Home(){
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    const textList = ["행복하게 매일을 살아가는", "매순간 열정이 넘치는", "항상 긍정적으로 사고하는", "사용자의 편의를 생각하는"];
+    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
       
     useEffect(() => {
         const completedTitle = textList[textNum];
@@ -49,7 +49,7 @@ export default function Home(){
                         height: '5px',
                         transformOrigin: 0, 
                         transform: 'translate3d(0, 0, 0)',
-                        background: '#000000'
+                        background: '#ffd400'
             }} />
             <img alt="title" src={title} style={{width: '100%'}}></img>
             <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'200px', marginBottom: '60px'}}>

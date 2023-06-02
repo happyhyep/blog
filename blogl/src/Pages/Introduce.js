@@ -16,7 +16,7 @@ export default function Introduce() {
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    const textList = ["행복하게 매일을 살아가는", "매순간 열정이 넘치는", "항상 긍정적으로 사고하는", "사용자의 편의를 생각하는"];
+    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
       
     useEffect(() => {
         const completedTitle = textList[textNum];
