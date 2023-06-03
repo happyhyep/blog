@@ -36,7 +36,7 @@ export default function Introduce() {
                 setCount(0);
             }, 1000);
         }
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, [count])
       
     return(
