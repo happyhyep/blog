@@ -9,11 +9,11 @@ const NavBar = () => {
         <div className='NavBar'>
             <TopMenu>
                     <NavTextLogo to='/'><img alt="logo" src={logo} style={{width: '160px'}}></img></NavTextLogo>
-                    <NavText to='/introduce'>Introduce</NavText>
-                    <NavText to='/awards'>Awards</NavText>
-                    <NavText to='/projects'>Projects</NavText>
-                    <NavText to='/activities'>Activities</NavText>
-                    <NavText to='/gallery'>Gallery</NavText>
+                    <NavText to={`${process.env.PUBLIC_URL}/introduce`}>Introduce</NavText>
+                    <NavText to={`${process.env.PUBLIC_URL}/awards`}>Awards</NavText>
+                    <NavText to={`${process.env.PUBLIC_URL}/projects`}>Projects</NavText>
+                    <NavText to={`${process.env.PUBLIC_URL}/activities`}>Activities</NavText>
+                    <NavText to={`${process.env.PUBLIC_URL}/gallery`}>Gallery</NavText>
             </TopMenu>
         </div>
     )

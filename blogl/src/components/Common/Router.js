@@ -11,12 +11,12 @@ export default function Router() {
     return(
         <BrowserRouter>
             <Routes>
-                <Route exact path='/' element={<Home />} />
-                <Route path='/introduce' element={<Introduce />} />
-                <Route path='/awards' element={<Awards />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/activities' element={<Activities />} />
-                <Route path='/gallery' element={<Gallery />} />
+                <Route exact path={process.env.PUBLIC_URL + '/'} element={<Home />} />
+                <Route path={process.env.PUBLIC_URL + '/introduce'} element={<Introduce />} />
+                <Route path={process.env.PUBLIC_URL + '/awards'} element={<Awards />} />
+                <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />} />
+                <Route path={process.env.PUBLIC_URL + '/activities'} element={<Activities />} />
+                <Route path={process.env.PUBLIC_URL + '/gallery'} element={<Gallery />} />
             </Routes>
         </BrowserRouter>
 
