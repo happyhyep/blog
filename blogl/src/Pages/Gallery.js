@@ -6,6 +6,7 @@ export default function Gallery(){
     return (
         <>
             <NavBar></NavBar>
+            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>페이지 준비중입니다 ...</div>
             <Footer />
         </>
     )
