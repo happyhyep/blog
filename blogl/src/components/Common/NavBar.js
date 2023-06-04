@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <div className='NavBar'>
             <TopMenu>
-                    <NavTextLogo to='/'><img alt="logo" src={logo} style={{width: '160px'}}></img></NavTextLogo>
+                    <NavTextLogo to={`${process.env.PUBLIC_URL}`}><img alt="logo" src={logo} style={{width: '160px'}}></img></NavTextLogo>
                     <NavText to={`${process.env.PUBLIC_URL}/introduce`}>Introduce</NavText>
                     <NavText to={`${process.env.PUBLIC_URL}/awards`}>Awards</NavText>
                     <NavText to={`${process.env.PUBLIC_URL}/projects`}>Projects</NavText>
