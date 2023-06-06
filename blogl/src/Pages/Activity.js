@@ -42,7 +42,7 @@ const TextAnimationBlock = styled.div`
     &:hover {
       animation: expand 0.5s ease forwards;
     }
-  }
+  } 
 
   @keyframes expand {
     0% {
