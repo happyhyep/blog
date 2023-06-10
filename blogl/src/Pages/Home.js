@@ -72,7 +72,7 @@ export default function Home(){
 
 
 
-const Happyhyep = styled.div`
+const Happyhyep = styled.div` 
     font-family: 'Redemption';
     font-style: normal;
     font-weight: 400;
