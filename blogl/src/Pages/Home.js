@@ -62,7 +62,7 @@ export default function Home(){
                 <Contact style={{fontSize: '18px', marginTop: '60px'}}>👩🏻‍💻 상상을 현실로 구현하는, <strong>프로그래밍</strong>을 좋아합니다.</Contact>
                 <Contact style={{fontSize: '18px'}}>📸 아름다운 순간을 기록하는, <strong>사진 촬영</strong>을 좋아합니다.</Contact>
                 <Contact style={{fontSize: '18px'}}>🥁 여러 악기가 하나의 음악이 되는, <strong>밴드 합주(드럼 연주)</strong>를 좋아합니다.</Contact>
-                <Contact style={{fontSize: '15px', marginTop: '50px'}}>- 저에 대한 자세한 내용은 위의 메뉴를 참고해주세요! -</Contact>
+                <Contact style={{fontSize: '15px', marginTop: '50px'}}>- 저에 대한 자세한 내용은 introduce 메뉴를 참고해주세요! -</Contact>
             </div>
             <Footer />
 
