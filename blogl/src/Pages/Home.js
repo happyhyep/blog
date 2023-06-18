@@ -70,7 +70,7 @@ export default function Home(){
     )
 }
 
-
+ 
 
 const Happyhyep = styled.div` 
     font-family: 'Redemption';
