@@ -5,6 +5,7 @@ import NavBar from "../components/Common/NavBar";
 import title from "../img/title.png";
 import Footer from "../components/Common/Footer";
 import pic3 from "../img/그림3.png";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export default function Home(){
     const { scrollYProgress } = useScroll();
@@ -37,6 +38,7 @@ export default function Home(){
 
     return (
         <>
+
             <NavBar></NavBar>
             <motion.div className="bar"
                 style={{ scaleX: scrollYProgress,
@@ -51,19 +53,25 @@ export default function Home(){
                         transform: 'translate3d(0, 0, 0)',
                         background: '#ffd400'
             }} />
-            <img alt="title" src={title} style={{width: '100%'}}></img>
-            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'200px', marginBottom: '60px'}}>
-                <img alt="pic3" src={pic3} style={{width: '500px', borderRadius: '100px'}}></img>
-            </div>
-            <Happyhyep>Jeong Hye In</Happyhyep>
-            <div className="interested">
-                <Contact style={{fontSize: '30px', marginTop: '100px'}}>안녕하세요!</Contact>
-                <Contact style={{fontSize: '40px', marginTop: '10px'}}><strong><Typing>{landingTitle}</Typing> 개발자 정혜인 입니다.</strong></Contact>
-                <Contact style={{fontSize: '18px', marginTop: '60px'}}>👩🏻‍💻 상상을 현실로 구현하는, <strong>프로그래밍</strong>을 좋아합니다.</Contact>
-                <Contact style={{fontSize: '18px'}}>📸 아름다운 순간을 기록하는, <strong>사진 촬영</strong>을 좋아합니다.</Contact>
-                <Contact style={{fontSize: '18px'}}>🥁 여러 악기가 하나의 음악이 되는, <strong>밴드 합주(드럼 연주)</strong>를 좋아합니다.</Contact>
-                <Contact style={{fontSize: '15px', marginTop: '50px'}}>- 저에 대한 자세한 내용은 introduce 메뉴를 참고해주세요! -</Contact>
-            </div>
+                <img alt="title" src={title} style={{width: '100%'}}></img>
+                <div className="profile-box" style={{display: "flex", marginTop:'200px', marginBottom: '60px', marginLeft: '15%', marginRight: '15%', justifyContent:'space-between'}}>
+                    <div className="profile" style={{}}>
+                        <img alt="pic3" src={pic3} style={{width: '500px', borderRadius: '70px'}}></img>
+
+                    </div>
+                
+                    <div className="interested" >
+                        <Contact style={{fontSize: '40px', marginTop: '40px'}}>안녕하세요!</Contact>
+                        <Contact style={{fontSize: '30px', marginTop: '20px'}}><strong> 행복하게 매일을 살아가는 개발자,</strong></Contact>
+                        <Contact style={{fontSize: '25px', marginTop: '10px'}}>정혜인 입니다.</Contact>
+                        <Contact style={{fontSize: '18px', marginTop: '60px'}}>개발을 하며 힘들 때도 많지만, </Contact>
+                        <Contact style={{fontSize: '18px', marginBottom: '50px'}}>구현해냈을 때의 희열은 계속 개발을 하게 만드는 원동력이 됩니다.</Contact>
+                        <Contact style={{fontSize: '18px'}}>그 희열을 누구보다 잘 알기에</Contact>
+                        <Contact style={{fontSize: '18px'}}>항상 공부하고, 성장해나갑니다.</Contact>
+                        <Contact style={{fontSize: '18px', marginBottom: '50px'}}>희열을 느끼기 위해 앞으로도 끊임없이 공부할 것입니다.</Contact>
+                        <Contact style={{fontSize: '15px', marginTop: '50px'}}>저에 대한 자세한 내용은 introduce 메뉴에서 확인 바랍니다.</Contact>
+                    </div>
+                </div>
             <Footer />
 
         </> 
@@ -84,7 +92,6 @@ const Happyhyep = styled.div`
 const Contact = styled.div`
     font-family: AppleSDGothic;
     font-size: 20px;
-    text-align: center;
     color: #53354A;
     margin-top: 5px;
 `

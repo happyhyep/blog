@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
-import introduce_self from '../img/introduce_self.png'
+import profile from "../img/profile.png";
 import styled from "styled-components";
 import pic1 from "../img/그림1.png";
 import pic2 from "../img/그림2.png";
@@ -16,7 +16,7 @@ export default function Introduce() {
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
+    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는", "주위 사람들까지 행복하게 만드는", "매순간 후회 없이 살아가는", "익숙함에 속지 않는"];
       
     useEffect(() => {
         const completedTitle = textList[textNum];
@@ -42,11 +42,24 @@ export default function Introduce() {
     return(
         <>
             <NavBar></NavBar>
-            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="introduce_self" src={introduce_self} style={{width: '500px'}}></img></div>
-            <div style={{display:"flex", justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px'}}><DashLine /><Happyhyep style={{width: '20%'}}>happyhyep</Happyhyep><DashLine /></div>
-            <div className="introduce_myself">
-                <Text>열정이 넘치고 항상 밝은 사람으로, 주위 사람들까지 긍정적으로 만듭니다 😄</Text>
-                <Text>‘익숙함에 속지 말자’와 ‘후회 없이 살아가자’는 신념으로 매순간 최선을 다하며 살아갑니다.</Text>
+            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="profile" src={profile} style={{width: '500px'}}></img></div>
+            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
+                <Happyhyep>Jeong Hye In</Happyhyep>
+            </div>
+        
+            <div className="introduce_myself" style={{marginTop: '50px', width: '60%', marginLeft: '25%'}}>
+                <IntroduceText>안녕하세요,</IntroduceText>
+                <IntroduceText>사용자들이 웹사이트나 애플리케이션을 사용할 때 좋은 경험을 제공하고자 하는 프론트엔드 개발자 정혜인입니다.</IntroduceText>
+                <br />
+                <IntroduceText>저는 사용자의 눈에 확 들어오게 하여 페이지를 각인시킴과 동시에 UI/UX에도 신경을 쓰는 것을 중요하게 생각합니다.</IntroduceText>
+                <IntroduceText>사용자가 쉽게 이해하고 사용할 수 있는 직관적인 인터페이스를 구축하고,</IntroduceText>
+                <IntroduceText>시각적으로 매력적이고 현대적인 디자인을 구현하는 것에 열정을 갖고 있습니다.</IntroduceText>
+                <br />
+                <IntroduceText>항상 창의적이고 협업을 중요시하는 개발자로서 최선을 다하고 있습니다.</IntroduceText>
+                <IntroduceText>학생회장, 동아리 활동, 개발 협업 등을 진행하며 얻은 경험을 통해 다른 직무의 사람들과도 원활한 의사소통이 가능합니다.</IntroduceText>
+                <br />
+                <IntroduceText>매사에 행복하고 긍정적인 태도로 임하여</IntroduceText>
+                <IntroduceText>단순한 코딩 뿐만 아니라 의사소통과 협업에서도 좋은 결과를 만들어낼 것입니다.</IntroduceText>
             </div>
             <div className="picture" style={{marginTop: '70px', display: "flex", justifyContent: 'center'}}>
                 <img alt="그림1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
@@ -105,13 +118,11 @@ const DashLine = styled.div`
     margin-bottom: 70px;
     margin-top: 70px;
 `
-
-const Text = styled.div`
+const IntroduceText = styled.div`
     font-family: AppleSDGothic;
-    font-size: 24px;
-    text-align: center;
+    font-size: 17px;
     color: #53354A;
-    margin-top: 20px;
+    margin-top: 5px;
 `
 
 const Contact = styled.div`
@@ -142,4 +153,5 @@ const Typing = styled.div`
     vertical-align: middle;
     border-right: .05em solid black;
     animation:  cursor 0.2s ease infinite;
+    color: #ffd400;
 `

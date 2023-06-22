@@ -6,9 +6,9 @@ import logo from '../../img/logo.png'
 const NavBar = () => {
 
     return (
-        <div className='NavBar'>
+        <div className='NavBar' style={{width: '100%'}}>
             <TopMenu>
-                    <NavTextLogo to={`${process.env.PUBLIC_URL}`}><img alt="logo" src={logo} style={{width: '160px'}}></img></NavTextLogo>
+                    <NavTextLogo to={`${process.env.PUBLIC_URL}`}><img alt="logo" src={logo} style={{width: '20%'}}></img></NavTextLogo>
                     <NavText to={`${process.env.PUBLIC_URL}/introduce`}>Introduce</NavText>
                     <NavText to={`${process.env.PUBLIC_URL}/awards`}>Awards</NavText>
                     <NavText to={`${process.env.PUBLIC_URL}/projects`}>Projects</NavText>
