@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
+import {motion,  useScroll, useInView} from 'framer-motion';
 import profile from "../img/profile.png";
 import styled from "styled-components";
 import pic1 from "../img/그림1.png";
@@ -13,6 +14,8 @@ import pic7 from "../img/그림7.jpg";
 import Footer from "../components/Common/Footer";
 
 export default function Introduce() {
+    const { scrollYProgress } = useScroll();
+
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
@@ -42,6 +45,20 @@ export default function Introduce() {
     return(
         <>
             <NavBar></NavBar>
+            <motion.div className="bar"
+                style={{ scaleX: scrollYProgress,
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        width: '100%',
+                        height: '5px',
+                        transformOrigin: 0, 
+                        transform: 'translate3d(0, 0, 0)',
+                        background: '#ffd400'
+            }} />
+
             <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="profile" src={profile} style={{width: '500px'}}></img></div>
             <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
                 <Happyhyep>Jeong Hye In</Happyhyep>
@@ -61,7 +78,7 @@ export default function Introduce() {
                 <IntroduceText>매사에 행복하고 긍정적인 태도로 임하여</IntroduceText>
                 <IntroduceText>단순한 코딩 뿐만 아니라 의사소통과 협업에서도 좋은 결과를 만들어낼 것입니다.</IntroduceText>
             </div>
-            <div className="picture" style={{marginTop: '70px', display: "flex", justifyContent: 'center'}}>
+            <div className="picture" style={{marginTop: '130px', display: "flex", justifyContent: 'center'}}>
                 <img alt="그림1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
                 <img alt="그림2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
                 <img alt="그림3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>

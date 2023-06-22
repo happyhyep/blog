@@ -51,7 +51,7 @@ export default function Home(){
                         height: '5px',
                         transformOrigin: 0, 
                         transform: 'translate3d(0, 0, 0)',
-                        background: '#ffd400'
+                        background: '#93C6D5'
             }} />
                 <img alt="title" src={title} style={{width: '100%'}}></img>
                 <div className="profile-box" style={{display: "flex", marginTop:'200px', marginBottom: '60px', marginLeft: '15%', marginRight: '15%', justifyContent:'space-between'}}>

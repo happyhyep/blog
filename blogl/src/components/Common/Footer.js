@@ -7,7 +7,7 @@ import gmail from '../../icons/gmail.png';
 
 const Footer = () => {
     return (
-        <div className='Footer' style={{backgroundColor: 'black', height: '175px', marginTop: '100px'}}>
+        <div className='Footer' style={{backgroundColor: 'black', height: '175px', marginTop: '120px'}}>
             <div className='footer-icons' style={{display: 'flex', justifyContent: 'space-between', margin: 'auto', width: '200px'}}>
                 <NavLink to='https://github.com/happyhyep'><img alt="github" src={github} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
                 <NavLink to='https://www.instagram.com/happyhyep_day/'><img alt="instagram" src={instagram} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
