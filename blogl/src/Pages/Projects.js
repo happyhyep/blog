@@ -1,11 +1,24 @@
-import React from "react";
+import React, {useRef} from "react";
 import NavBar from "../components/Common/NavBar";
 import Footer from "../components/Common/Footer";
 import styled from "styled-components";
 import {motion,  useScroll, useInView} from 'framer-motion';
+import focuz from '../img/projects/focuz.png';
+import focuz_video from "../img/projects/구현영상.mp4";
+import bburing from "../img/projects/BBuRing.png";
+import eclipse from "../img/projects/eclipse.png";
+import eclipse_video from "../img/projects/eclipse.mp4";
+import github from "../icons/github.png";
+import { NavLink } from "react-router-dom";
+
 
 export default function Projects(){
     const { scrollYProgress } = useScroll();
+
+    const videoRef= useRef();
+    const setPlayBackRate = () => {
+      videoRef.current.playbackRate = 1.6;
+    };
 
     return (
         <>
@@ -24,8 +37,97 @@ export default function Projects(){
                         background: '#ffd400'
             }} />
 
-            <div style={{display:"flex", justifyContent: 'space-between', alignItems: 'center', marginTop: '70px', marginBottom: '40px'}}>
-              <DashLine /><Happyhyep style={{width: '20%'}}>Design</Happyhyep><DashLine />
+            <div style={{display:"flex", justifyContent: 'space-between', alignItems: 'center', marginTop: '50px', marginBottom: '20px'}}>
+              <DashLine /><Happyhyep style={{width: '20%'}}>Front-end</Happyhyep><DashLine />
+            </div>
+
+            {/* ---- focuz 프로젝트 ---- */}
+            <div style={{display:'flex', justifyContent: 'center'}}>
+                <img alt="focuz" src={focuz} style={{width: '500px'}}></img>
+                <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                    <Title><strong>FOCUZ</strong></Title>
+                    <Text style={{fontSize: '20px'}}>- 얼굴인식 캠스터디 웹사이트</Text>
+                    <Text><strong>React.js, Tensorflow, kakao oauth,</strong> Spring, MySQL, redis</Text>
+                    <br />
+                    <Text>기존 화상 회의 프로그램 및 공부 프로그램과 차별화 하여</Text>
+                    <Text>얼굴 인식된 시간을 측정하여 공부 집중도를 분석합니다.</Text>
+                    <br />
+                    <Text>프론트엔드 2명, 백엔드 2명으로 진행하였습니다.</Text>
+                    <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
+                    <Text style={{fontSize: '13px'}}>페이지 라우팅, 회원가입/로그인-kakao auth, 공부하기 페이지-tensorflow 라이브러리 활용, 친구/그룹 추가/목록 페이지 - 페이지,
+                        컴포넌트 개발, 스터디 그룹 생성 페이지, 분석 페이지(캘린더 날짜 설정, 시간 그래프화)를 개발하였습니다.</Text>
+                </div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                <GithubButton to='https://github.com/happyhyep/FOCUZ' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
+            </div>
+            <Happyhyep style={{marginTop: '30px'}}>VIDEO</Happyhyep>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <video width='600' controls="controls" ref={videoRef} onCanPlay={() => setPlayBackRate()}>
+                    <source src={focuz_video} type="video/mp4"/>
+                </video>
+            </div>
+
+
+
+            
+            {/* ---- BBuRing_log ---- */}
+            <div style={{display:'flex', justifyContent: 'center', marginTop: '100px'}}>
+                <img alt="bburing" src={bburing} style={{width: '500px'}}></img>
+                <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                    <Title><strong>BBuRing_log</strong></Title>
+                    <Text style={{fontSize: '20px'}}>- 전국 뿌링클 맛집 기록 웹사이트</Text>
+                    <Text><strong>React.js, Docker</strong> Spring, Python, MySQL</Text>
+                    <br />
+                    <Text>전국 뿌링클 맛집 탐방을 위해</Text>
+                    <Text>각 매장 별로 리뷰를 기록해둘 수 있습니다.</Text>
+                    <br />
+                    <Text>프론트엔드 1명, 백엔드 1명으로 진행하였습니다.</Text>
+                    <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
+                    <Text style={{fontSize: '13px'}}>페이지 라우팅, 홈 사이트 안내-애니메이션, kakao map api-마커 등록,
+                    지점 검색, 포스팅 확인-지도 클릭 시 리뷰/마우스 호버 글 미리보기, 포스팅 작성을 개발하였습니다.</Text>
+                </div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                <GithubButton to='https://github.com/happyhyep/BBuRing_log' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
+            </div>
+            <Happyhyep style={{marginTop: '30px'}}>VIDEO</Happyhyep>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <video width='600' controls="controls" ref={videoRef} onCanPlay={() => setPlayBackRate()}>
+                    <source src={eclipse_video} type="video/mp4"/>
+                </video>
+            </div>
+
+
+
+            {/* ---- eclipse ---- */}
+            <div style={{display:'flex', justifyContent: 'center', marginTop: '100px'}}>
+                <img alt="bburing" src={eclipse} style={{width: '500px'}}></img>
+                <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                    <Title><strong>Eclipse</strong></Title>
+                    <Text style={{fontSize: '20px'}}>- 대학생의 진로 걱정 해결을 위한 웹사이트</Text>
+                    <Text><strong>React.js</strong> Python(Django)</Text>
+                    <br />
+                    <Text>코로나19 이후 선/후배 관계의 단절로</Text>
+                    <Text>진로 걱정이 많은 대학생들을 위해 기획하였습니다.</Text>
+                    <br />
+                    <Text>프론트엔드 2명, 백엔드 2명으로 진행하였습니다.</Text>
+                    <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
+                    <Text style={{fontSize: '13px'}}>디자인, 페이지 라우팅, 홈화면, 로그인, 교수-학생 소통 페이지,
+                    시간표 추천 페이지, 내 프로필 관리 페이지, 후원하기 페이지, 알람 확인하기 페이지를 개발하였습니다.</Text>
+                </div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                <GithubButton to='https://github.com/happyhyep/Eclipse' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
+            </div>
+            <Happyhyep style={{marginTop: '30px'}}>VIDEO</Happyhyep>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <video width='600' controls="controls" ref={videoRef} onCanPlay={() => setPlayBackRate()}>
+                    <source src={eclipse_video} type="video/mp4"/>
+                </video>
             </div>
             <Footer />
         </>
@@ -36,16 +138,41 @@ const DashLine = styled.div`
     width: 30%;
     height: 0px;
     border: 1px dashed #000000;
-    margin-bottom: 70px;
-    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 `
 
 const Happyhyep = styled.div`
     font-family: 'Redemption';
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 50px;
     line-height: 71px;
     text-align: center;
     letter-spacing: 0.175em;
+`
+
+const Title = styled.div`
+    font-family: AppleSDGothic;
+    font-size: 30px;
+    color: #53354A;
+    margin-top: 30px;
+`
+
+const Text = styled.div`
+    font-family: AppleSDGothic;
+    font-size: 15px;
+    color: #53354A;
+    margin-top: 5px;
+`
+
+const GithubButton = styled(NavLink)`
+    border-radius: 5px;
+    border-width: 0.5px;
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 `
