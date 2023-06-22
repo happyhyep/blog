@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.073c9b0a.css",
-    "main.js": "/blog/static/js/main.4428cc70.js",
+    "main.js": "/blog/static/js/main.16df5b5d.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/그림3.png": "/blog/static/media/그림3.76381cce5f59f103713d.png",
     "static/media/그림5.jpg": "/blog/static/media/그림5.c9e115ad669c94e40644.jpg",
@@ -11,18 +11,18 @@
     "static/media/그림7.jpg": "/blog/static/media/그림7.7ead339128414ba7d23f.jpg",
     "static/media/그림2.png": "/blog/static/media/그림2.0cf3d4e89f1ee8cba98f.png",
     "static/media/그림1.png": "/blog/static/media/그림1.928eaa0d586fd6e14a3e.png",
-    "static/media/introduce_self.png": "/blog/static/media/introduce_self.1a77db594c03543fc653.png",
+    "static/media/profile.png": "/blog/static/media/profile.b75d4b7530b2ea6f081a.png",
     "static/media/instagram.png": "/blog/static/media/instagram.ed5ed57e98d053cf1e55.png",
     "static/media/github.png": "/blog/static/media/github.bcaf65c67ed8a714f267.png",
     "static/media/logo.png": "/blog/static/media/logo.de63aceb2c8b8f1ede28.png",
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
     "main.073c9b0a.css.map": "/blog/static/css/main.073c9b0a.css.map",
-    "main.4428cc70.js.map": "/blog/static/js/main.4428cc70.js.map",
+    "main.16df5b5d.js.map": "/blog/static/js/main.16df5b5d.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.4428cc70.js"
+    "static/js/main.16df5b5d.js"
   ]
 }
