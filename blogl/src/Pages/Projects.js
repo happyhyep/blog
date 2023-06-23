@@ -6,8 +6,11 @@ import {motion,  useScroll, useInView} from 'framer-motion';
 import focuz from '../img/projects/focuz.png';
 import focuz_video from "../img/projects/구현영상.mp4";
 import bburing from "../img/projects/BBuRing.png";
+import bburing_video from "../img/projects/BBuRing.mp4";
 import eclipse from "../img/projects/eclipse.png";
 import eclipse_video from "../img/projects/eclipse.mp4";
+import gallery from "../img/projects/gallery.png";
+import gallery_video from "../img/projects/gallery.mp4";
 import github from "../icons/github.png";
 import { NavLink } from "react-router-dom";
 
@@ -34,7 +37,7 @@ export default function Projects(){
                         height: '5px',
                         transformOrigin: 0, 
                         transform: 'translate3d(0, 0, 0)',
-                        background: '#ffd400'
+                        background: '#000000'
             }} />
 
             <div style={{display:"flex", justifyContent: 'space-between', alignItems: 'center', marginTop: '50px', marginBottom: '20px'}}>
@@ -55,7 +58,7 @@ export default function Projects(){
                     <Text>프론트엔드 2명, 백엔드 2명으로 진행하였습니다.</Text>
                     <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
                     <Text style={{fontSize: '13px'}}>페이지 라우팅, 회원가입/로그인-kakao auth, 공부하기 페이지-tensorflow 라이브러리 활용, 친구/그룹 추가/목록 페이지 - 페이지,
-                        컴포넌트 개발, 스터디 그룹 생성 페이지, 분석 페이지(캘린더 날짜 설정, 시간 그래프화)를 개발하였습니다.</Text>
+                        컴포넌트 개발, 스터디 그룹 생성 페이지, 분석 페이지(캘린더 날짜 설정, 시간 그래프화)를 구현하였습니다.</Text>
                 </div>
             </div>
             <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
@@ -86,7 +89,7 @@ export default function Projects(){
                     <Text>프론트엔드 1명, 백엔드 1명으로 진행하였습니다.</Text>
                     <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
                     <Text style={{fontSize: '13px'}}>페이지 라우팅, 홈 사이트 안내-애니메이션, kakao map api-마커 등록,
-                    지점 검색, 포스팅 확인-지도 클릭 시 리뷰/마우스 호버 글 미리보기, 포스팅 작성을 개발하였습니다.</Text>
+                    지점 검색, 포스팅 확인-지도 클릭 시 리뷰/마우스 호버 글 미리보기, 포스팅 작성을 구현하였습니다.</Text>
                 </div>
             </div>
             <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
@@ -96,7 +99,7 @@ export default function Projects(){
             <Happyhyep style={{marginTop: '30px'}}>VIDEO</Happyhyep>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <video width='600' controls="controls" ref={videoRef} onCanPlay={() => setPlayBackRate()}>
-                    <source src={eclipse_video} type="video/mp4"/>
+                    <source src={bburing_video} type="video/mp4"/>
                 </video>
             </div>
 
@@ -116,7 +119,7 @@ export default function Projects(){
                     <Text>프론트엔드 2명, 백엔드 2명으로 진행하였습니다.</Text>
                     <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
                     <Text style={{fontSize: '13px'}}>디자인, 페이지 라우팅, 홈화면, 로그인, 교수-학생 소통 페이지,
-                    시간표 추천 페이지, 내 프로필 관리 페이지, 후원하기 페이지, 알람 확인하기 페이지를 개발하였습니다.</Text>
+                    시간표 추천 페이지, 내 프로필 관리 페이지, 후원하기 페이지, 알람 확인하기 페이지를 구현하였습니다.</Text>
                 </div>
             </div>
             <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
@@ -129,6 +132,57 @@ export default function Projects(){
                     <source src={eclipse_video} type="video/mp4"/>
                 </video>
             </div>
+
+
+            {/* ---- gallery web ---- */}
+            <div style={{display:'flex', justifyContent: 'center', marginTop: '100px'}}>
+                <img alt="bburing" src={gallery} style={{width: '500px'}}></img>
+                <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                <Title><strong>gallery web</strong></Title>
+                <Text style={{fontSize: '20px'}}>- 찍은 사진들을 기록해둘 수 있는 웹사이트</Text>
+                <Text><strong>React.js, firebase</strong></Text>
+                <br />
+                <Text>사진 찍는 것을 좋아하는 사람들을 위해</Text>
+                <Text>웹사이트에 기록해둘 수 있는 웹사이트를 기획하였습니다.</Text>
+                <br />
+                <Text>혼자 toy project로 진행하였습니다.</Text>
+                <Text style={{fontSize: '13px'}}>디자인, 페이지 라우팅, 홈화면, 회원가입/로그인, 개인정보 수정, 글/사진 업로드,
+                포스팅 확인, 포스팅 수정, 포스팅 삭제를 구현하였습니다.</Text>
+            </div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                <GithubButton to='https://github.com/happyhyep/gallery-web' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
+            </div>
+            <Happyhyep style={{marginTop: '30px'}}>VIDEO</Happyhyep>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <video width='600' controls="controls" ref={videoRef} onCanPlay={() => setPlayBackRate()}>
+                    <source src={gallery_video} type="video/mp4"/>
+                </video>
+            </div>
+
+
+            {/* ---- apartment ---- */}
+            <div style={{display:'flex', justifyContent: 'center', marginTop: '100px'}}>
+                <img alt="bburing" src={gallery} style={{width: '500px'}}></img>
+                <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                    <Title><strong>Search For Apartment Transactions</strong></Title>
+                    <Text style={{fontSize: '20px'}}>- 아파트 매매 실거래가를 확인할 수 있는 웹사이트</Text>
+                    <Text><strong>Vanilla.js, 공공데이터 api, aws 배포</strong></Text>
+                    <br />
+                    <Text>사진 찍는 것을 좋아하는 사람들을 위해</Text>
+                    <Text>웹사이트에 기록해둘 수 있는 웹사이트를 기획하였습니다.</Text>
+                    <br />
+                    <Text>프론트엔드 1명, api 크롤링 1명으로 진행하였습니다.</Text>
+                    <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
+                    <Text style={{fontSize: '13px'}}>디자인, api 연동, 검색 기능, 부동산 사이트 http 하이퍼링크 등을 구현하였습니다.</Text>
+                </div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                <GithubButton to='https://github.com/happyhyep/project_search_for_apart_transactions' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
+            </div>
+
             <Footer />
         </>
     )

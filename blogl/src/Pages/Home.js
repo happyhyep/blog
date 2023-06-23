@@ -6,6 +6,7 @@ import title from "../img/title.png";
 import Footer from "../components/Common/Footer";
 import pic3 from "../img/그림3.png";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { NavLink } from "react-router-dom";
 
 export default function Home(){
     const { scrollYProgress } = useScroll();
@@ -54,7 +55,7 @@ export default function Home(){
                         background: '#93C6D5'
             }} />
                 <img alt="title" src={title} style={{width: '100%'}}></img>
-                <div className="profile-box" style={{display: "flex", marginTop:'200px', marginBottom: '60px', marginLeft: '15%', marginRight: '15%', justifyContent:'space-between'}}>
+                <div className="profile-box" style={{display: "flex", marginTop:'200px', marginBottom: '10px', marginLeft: '15%', marginRight: '15%', justifyContent:'space-between'}}>
                     <div className="profile" style={{}}>
                         <img alt="pic3" src={pic3} style={{width: '500px', borderRadius: '70px'}}></img>
 
@@ -71,6 +72,9 @@ export default function Home(){
                         <Contact style={{fontSize: '18px', marginBottom: '50px'}}>희열을 느끼기 위해 앞으로도 끊임없이 공부할 것입니다.</Contact>
                         <Contact style={{fontSize: '15px', marginTop: '50px'}}>저에 대한 자세한 내용은 introduce 메뉴에서 확인 바랍니다.</Contact>
                     </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'end', marginRight: '100px'}}>
+                    <Button to={`${process.env.PUBLIC_URL}/introduce`} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>to Introduce Menu</Button>
                 </div>
             <Footer />
 
@@ -102,4 +106,15 @@ const Typing = styled.div`
     vertical-align: middle;
     border-right: .05em solid black;
     animation:  cursor 0.2s ease infinite;
+`
+
+const Button = styled(NavLink)`
+    border-radius: 5px;
+    border-width: 0.5px;
+    width: 200px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 `
