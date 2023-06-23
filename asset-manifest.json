@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.073c9b0a.css",
-    "main.js": "/blog/static/js/main.45ff7a7a.js",
+    "main.js": "/blog/static/js/main.35c8de7a.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
@@ -16,6 +16,7 @@
     "static/media/gallery.png": "/blog/static/media/gallery.58ebc44bc043ab7db52b.png",
     "static/media/그림7.jpg": "/blog/static/media/그림7.7ead339128414ba7d23f.jpg",
     "static/media/그림2.png": "/blog/static/media/그림2.0cf3d4e89f1ee8cba98f.png",
+    "static/media/apartment.png": "/blog/static/media/apartment.ceae1e7ebc22fd0fd646.png",
     "static/media/focuz.png": "/blog/static/media/focuz.994cb11d59db12b8fb47.png",
     "static/media/그림1.png": "/blog/static/media/그림1.928eaa0d586fd6e14a3e.png",
     "static/media/BBuRing.png": "/blog/static/media/BBuRing.de67786d169d6b31c211.png",
@@ -26,11 +27,11 @@
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
     "main.073c9b0a.css.map": "/blog/static/css/main.073c9b0a.css.map",
-    "main.45ff7a7a.js.map": "/blog/static/js/main.45ff7a7a.js.map",
+    "main.35c8de7a.js.map": "/blog/static/js/main.35c8de7a.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.45ff7a7a.js"
+    "static/js/main.35c8de7a.js"
   ]
 }
