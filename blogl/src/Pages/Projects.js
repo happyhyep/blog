@@ -11,6 +11,7 @@ import eclipse from "../img/projects/eclipse.png";
 import eclipse_video from "../img/projects/eclipse.mp4";
 import gallery from "../img/projects/gallery.png";
 import gallery_video from "../img/projects/gallery.mp4";
+import apartment from "../img/projects/apartment.png";
 import github from "../icons/github.png";
 import { NavLink } from "react-router-dom";
 
@@ -164,7 +165,7 @@ export default function Projects(){
 
             {/* ---- apartment ---- */}
             <div style={{display:'flex', justifyContent: 'center', marginTop: '100px'}}>
-                <img alt="bburing" src={gallery} style={{width: '500px'}}></img>
+                <img alt="bburing" src={apartment} style={{width: '500px'}}></img>
                 <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
                     <Title><strong>Search For Apartment Transactions</strong></Title>
                     <Text style={{fontSize: '20px'}}>- 아파트 매매 실거래가를 확인할 수 있는 웹사이트</Text>
