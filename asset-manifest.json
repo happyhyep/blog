@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.073c9b0a.css",
-    "main.js": "/blog/static/js/main.35c8de7a.js",
+    "main.js": "/blog/static/js/main.baac0c5c.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
@@ -27,11 +27,11 @@
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
     "main.073c9b0a.css.map": "/blog/static/css/main.073c9b0a.css.map",
-    "main.35c8de7a.js.map": "/blog/static/js/main.35c8de7a.js.map",
+    "main.baac0c5c.js.map": "/blog/static/js/main.baac0c5c.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.35c8de7a.js"
+    "static/js/main.baac0c5c.js"
   ]
 }
