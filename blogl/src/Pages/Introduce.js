@@ -1,16 +1,12 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
-import {motion,  useScroll, useInView} from 'framer-motion';
+import {motion,  useScroll} from 'framer-motion';
 import profile from "../img/profile.png";
 import styled from "styled-components";
 import pic1 from "../img/그림1.png";
 import pic2 from "../img/그림2.png";
 import pic3 from "../img/그림3.png";
-import pic4 from "../img/그림4.jpg";
-import pic5 from "../img/그림5.jpg";
-import pic6 from "../img/그림6.jpg";
-import pic7 from "../img/그림7.jpg";
 import Footer from "../components/Common/Footer";
 
 export default function Introduce() {
