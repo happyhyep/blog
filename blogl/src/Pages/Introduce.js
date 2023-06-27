@@ -54,9 +54,8 @@ export default function Introduce() {
                         transform: 'translate3d(0, 0, 0)',
                         background: '#ffd400'
             }} />
-
-            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="profile" src={profile} style={{width: '500px'}}></img></div>
-            <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
+            <div className="introduce-profile-image" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="profile" src={profile} style={{width: '500px'}}></img></div>
+            <div className="introduce-profile-name" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
                 <Happyhyep>Jeong Hye In</Happyhyep>
             </div>
         
