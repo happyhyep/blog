@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.073c9b0a.css",
-    "main.js": "/blog/static/js/main.baac0c5c.js",
+    "main.css": "/blog/static/css/main.a1a4e1f3.css",
+    "main.js": "/blog/static/js/main.266e8709.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
     "static/media/eclipse.mp4": "/blog/static/media/eclipse.ed866deca94b0fac2cfd.mp4",
     "static/media/그림3.png": "/blog/static/media/그림3.76381cce5f59f103713d.png",
-    "static/media/그림5.jpg": "/blog/static/media/그림5.c9e115ad669c94e40644.jpg",
     "static/media/title.png": "/blog/static/media/title.f8a5f0bd810a0074ab0a.png",
-    "static/media/그림6.jpg": "/blog/static/media/그림6.2569a0293cae0c43dfa0.jpg",
-    "static/media/그림4.jpg": "/blog/static/media/그림4.5492f94a402e7c312fbf.jpg",
     "static/media/gallery.mp4": "/blog/static/media/gallery.bf7e1892f26a62d35262.mp4",
     "static/media/eclipse.png": "/blog/static/media/eclipse.e2bc868322ed7ce719ba.png",
     "static/media/gallery.png": "/blog/static/media/gallery.58ebc44bc043ab7db52b.png",
-    "static/media/그림7.jpg": "/blog/static/media/그림7.7ead339128414ba7d23f.jpg",
     "static/media/그림2.png": "/blog/static/media/그림2.0cf3d4e89f1ee8cba98f.png",
     "static/media/apartment.png": "/blog/static/media/apartment.ceae1e7ebc22fd0fd646.png",
     "static/media/focuz.png": "/blog/static/media/focuz.994cb11d59db12b8fb47.png",
@@ -26,12 +22,12 @@
     "static/media/logo.png": "/blog/static/media/logo.de63aceb2c8b8f1ede28.png",
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
-    "main.073c9b0a.css.map": "/blog/static/css/main.073c9b0a.css.map",
-    "main.baac0c5c.js.map": "/blog/static/js/main.baac0c5c.js.map",
+    "main.a1a4e1f3.css.map": "/blog/static/css/main.a1a4e1f3.css.map",
+    "main.266e8709.js.map": "/blog/static/js/main.266e8709.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.baac0c5c.js"
+    "static/css/main.a1a4e1f3.css",
+    "static/js/main.266e8709.js"
   ]
 }
