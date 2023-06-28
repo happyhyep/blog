@@ -8,6 +8,7 @@ import pic1 from "../img/그림1.png";
 import pic2 from "../img/그림2.png";
 import pic3 from "../img/그림3.png";
 import Footer from "../components/Common/Footer";
+import "./Introduce.css";
 
 export default function Introduce() {
     const { scrollYProgress } = useScroll();
@@ -38,6 +39,29 @@ export default function Introduce() {
         return () => clearInterval(interval);
     }, [count])
       
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .1, 
+      }
+      
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          } else {
+            entry.target.classList.remove('active');
+          }
+        });
+      }, options);
+      const imageAnimationList = document.querySelectorAll('.introduce-profile-image');
+      const textAnimationList = document.querySelectorAll('.introduce-profile-name');
+      const photolistAnimationList = document.querySelectorAll('.my-photo-list');
+
+      imageAnimationList.forEach(el => observer.observe(el));
+      textAnimationList.forEach(el => observer.observe(el));
+      photolistAnimationList.forEach(el => observer.observe(el));
+
     return(
         <>
             <NavBar></NavBar>
@@ -54,10 +78,10 @@ export default function Introduce() {
                         transform: 'translate3d(0, 0, 0)',
                         background: '#ffd400'
             }} />
-            <div className="introduce-profile-image" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><img alt="profile" src={profile} style={{width: '500px'}}></img></div>
-            <div className="introduce-profile-name" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
+            <div className="introduce-profile-image" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><motion.img alt="profile" src={profile} style={{width: '500px'}}></motion.img></div>
+            <motion.div className="introduce-profile-name" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
                 <Happyhyep>Jeong Hye In</Happyhyep>
-            </div>
+            </motion.div>
         
             <div className="introduce_myself" style={{marginTop: '50px', width: '60%', marginLeft: '25%'}}>
                 <IntroduceText>안녕하세요,</IntroduceText>
@@ -73,7 +97,7 @@ export default function Introduce() {
                 <IntroduceText>매사에 행복하고 긍정적인 태도로 임하여</IntroduceText>
                 <IntroduceText>단순한 코딩 뿐만 아니라 의사소통과 협업에서도 좋은 결과를 만들어낼 것입니다.</IntroduceText>
             </div>
-            <div className="picture" style={{marginTop: '130px', display: "flex", justifyContent: 'center'}}>
+            <div className="my-photo-list" style={{marginTop: '130px', display: "flex", justifyContent: 'center'}}>
                 <img alt="그림1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
                 <img alt="그림2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
                 <img alt="그림3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
