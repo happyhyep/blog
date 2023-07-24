@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import NotoSansR from "./NotoSansRegular.otf"
-import AppleSDGothic from "./AppleSDGothicNeoR.ttf"
-import redemption from "./fonts/Redemption.ttf"
+import AppleSDGothic from "./AppleSDGothicNeoR.ttf";
+import redemption from "./Redemption.ttf";
 
 const GlobalStyle = createGlobalStyle`
 
