@@ -208,14 +208,14 @@ const Happyhyep = styled.div`
 `
 
 const Title = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 30px;
     color: #53354A;
     margin-top: 30px;
 `
 
 const Text = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 15px;
     color: #53354A;
     margin-top: 5px;
