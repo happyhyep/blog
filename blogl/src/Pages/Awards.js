@@ -13,6 +13,8 @@ export default function Awards(){
             <div className="profile" style={{display:"flex", justifyContent: 'center', marginTop:'20px'}}>2021 대학생 교육기부 공모전 장작 더하기 장려상 </div> */}
             <Box>
             <div style={{display:"flex", justifyContent: 'center', marginTop:'20px'}}>2023 San Jose State University Enterpreneurship Award 최우수</div>
+            <div style={{display:"flex", justifyContent: 'center', marginTop:'20px'}}>2022 경희대학교 소프트웨어융합대학 동아리대항전 최우수</div>
+            <div style={{display:"flex", justifyContent: 'center', marginTop:'20px'}}>2021 대학생 교육기부 공모전 장작 더하기 장려상</div>
             </Box>
             <Footer />
         </>
