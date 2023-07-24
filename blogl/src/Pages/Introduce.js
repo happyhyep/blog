@@ -98,9 +98,9 @@ export default function Introduce() {
                 <IntroduceText>단순한 코딩 뿐만 아니라 의사소통과 협업에서도 좋은 결과를 만들어낼 것입니다.</IntroduceText>
             </div>
             <div className="my-photo-list" style={{marginTop: '130px', display: "flex", justifyContent: 'center'}}>
-                <img alt="그림1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
-                <img alt="그림2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
-                <img alt="그림3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
             </div>
             <div className="interested">
                 <Contact style={{fontSize: '25px', marginTop: '100px'}}>안녕하세요!</Contact>
@@ -175,7 +175,7 @@ const Link = styled(NavLink)`
 `
 
 const Happyhyep = styled.div`
-    font-family: 'redemption';
+    font-family: redemption;
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
