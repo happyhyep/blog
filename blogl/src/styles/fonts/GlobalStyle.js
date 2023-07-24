@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import NotoSansR from "./NotoSansRegular.otf"
 import AppleSDGothic from "./AppleSDGothicNeoR.ttf"
-import Redemption from "./fonts/Redemption.ttf"
+import redemption from "./fonts/Redemption.ttf"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
     };
     @font-face {
-        font-family: 'Redemption';
-        src: url(${Redemption}) format("ttff");
+        font-family: 'redemption';
+        src: url(${redemption}) format("ttff");
         font-weight: normal;
         font-style: normal;
     };

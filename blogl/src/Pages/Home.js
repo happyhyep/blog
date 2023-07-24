@@ -110,7 +110,7 @@ export default function Home(){
 
 
 const Happyhyep = styled.div` 
-    font-family: 'Redemption';
+    font-family: 'redemption';
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
