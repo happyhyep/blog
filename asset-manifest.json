@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.83e9e9b4.css",
-    "main.js": "/blog/static/js/main.52153ac7.js",
+    "main.js": "/blog/static/js/main.7d18b6f6.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
@@ -11,10 +11,10 @@
     "static/media/gallery.mp4": "/blog/static/media/gallery.bf7e1892f26a62d35262.mp4",
     "static/media/eclipse.png": "/blog/static/media/eclipse.e2bc868322ed7ce719ba.png",
     "static/media/gallery.png": "/blog/static/media/gallery.58ebc44bc043ab7db52b.png",
-    "static/media/그림2.png": "/blog/static/media/그림2.0cf3d4e89f1ee8cba98f.png",
+    "static/media/pic2.png": "/blog/static/media/pic2.0cf3d4e89f1ee8cba98f.png",
     "static/media/apartment.png": "/blog/static/media/apartment.ceae1e7ebc22fd0fd646.png",
     "static/media/focuz.png": "/blog/static/media/focuz.994cb11d59db12b8fb47.png",
-    "static/media/그림1.png": "/blog/static/media/그림1.928eaa0d586fd6e14a3e.png",
+    "static/media/pic1.png": "/blog/static/media/pic1.928eaa0d586fd6e14a3e.png",
     "static/media/BBuRing.png": "/blog/static/media/BBuRing.de67786d169d6b31c211.png",
     "static/media/profile.png": "/blog/static/media/profile.b75d4b7530b2ea6f081a.png",
     "static/media/instagram.png": "/blog/static/media/instagram.ed5ed57e98d053cf1e55.png",
@@ -23,11 +23,11 @@
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
     "main.83e9e9b4.css.map": "/blog/static/css/main.83e9e9b4.css.map",
-    "main.52153ac7.js.map": "/blog/static/js/main.52153ac7.js.map",
+    "main.7d18b6f6.js.map": "/blog/static/js/main.7d18b6f6.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83e9e9b4.css",
-    "static/js/main.52153ac7.js"
+    "static/js/main.7d18b6f6.js"
   ]
 }
