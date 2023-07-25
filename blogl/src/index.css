@@ -7,26 +7,6 @@
   font-style: normal;
 };
 
-@font-face {
-  font-family: "redemption";
-  transform: skew(-0.001deg);
-  font-weight: normal;
-  font-style: normal;
-  src: url("./../src/styles/fonts/redemption.woff2") format("woff2"),
-  url("./../src/styles/fonts/redemption.woff") format("woff"),
-  url("./../src/styles/fonts/redemption.ttf") format("truetype")
-};
-
-@font-face {
-  font-family: "redemption";
-  transform: skew(-0.001deg);
-  font-weight: 400;
-  font-style: normal;
-  src: url("./../src/styles/fonts/redemption.woff2") format("woff2"),
-  url("./../src/styles/fonts/redemption.woff") format("woff"),
-  url("./../src/styles/fonts/redemption.ttf") format("truetype")
-};
-
 
 body {
   margin: 0;

@@ -20,21 +20,13 @@ const GlobalStyle = createGlobalStyle`
         font-weight: normal;
         font-style: normal;
         }
+
     @font-face {
-        font-family: "redemption", redemption;
+        font-family: 'Redemption';
         font-weight: normal;
         font-style: normal;
         transform: skew(-0.001deg);
-        src:url("./redemption.woff2") format("woff2"),
-        url("./redemption.woff") format("woff"),
-        url("./redemption.ttf") format("truetype");
-    };
-    @font-face {
-        font-family: 'Redemption';
-        font-weight: 400;
-        font-style: normal;
-        transform: skew(-0.001deg);
-        src:url("https://fonts.cdnfonts.com/css/redemption") format("woff2"),
+        src: url("https://fonts.cdnfonts.com/css/redemption") format("woff2");
     };
 
 `
