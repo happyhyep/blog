@@ -6,13 +6,13 @@ import redemption from "./redemption.ttf";
 const GlobalStyle = createGlobalStyle`
     @charset "utf-8";
     @font-face {
-        font-family: "applesdgothic";
+        font-family: "applesdgothic", applesdgothic;
         src: url("./applesdgothic.ttf") format("woff2");
         font-weight: normal;
         font-style: normal;
     };
     @font-face {
-        font-family: "redemption";
+        font-family: "redemption", redemption;
         font-weight: normal;
         font-style: normal;
         transform: skew(-0.001deg);
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
         url("./redemption.ttf") format("truetype");
     };
     @font-face {
-        font-family: "redemption";
+        font-family: "redemption", redemption;
         font-weight: 400;
         font-style: normal;
         transform: skew(-0.001deg);

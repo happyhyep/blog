@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import GlobalStyle from '../../styles/fonts/GlobalStyle';
 import logo from '../../img/logo.png'
 
 const NavBar = () => {
 
     return (
         <div className='NavBar' style={{width: '100%'}}>
+          <GlobalStyle />
             <TopMenu>
                     <div><NavTextLogo to={`${process.env.PUBLIC_URL}`}><Happyhyep className='animated-text'>happyhyep</Happyhyep></NavTextLogo></div>
                     <div style={{width: '450px', display: 'flex'}}>
@@ -106,7 +108,7 @@ const NavText = styled(NavLink)`
     align-items: center;
 
     font-size: 16px;
-    font-family: redemption;
+    font-family: applesdgothic;
     color: rgb(0,0,0);
     text-decoration: none;
 `;

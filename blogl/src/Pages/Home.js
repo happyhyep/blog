@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import styled from "styled-components";
+import GlobalStyle from "../styles/fonts/GlobalStyle";
 import {motion,  useScroll, useInView} from 'framer-motion';
 import NavBar from "../components/Common/NavBar";
 import title from "../img/title.png";
 import Footer from "../components/Common/Footer";
 import pic3 from "../img/그림3.png";
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { NavLink } from "react-router-dom";
 import './Home.css';
 
@@ -59,7 +59,7 @@ export default function Home(){
       imageAnimationList.forEach(el => observer.observe(el));
     return (
         <>
-
+            <GlobalStyle />
             <NavBar></NavBar>
             <motion.div className="bar"
                 style={{ scaleX: scrollYProgress,
