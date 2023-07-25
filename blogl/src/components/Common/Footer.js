@@ -13,7 +13,7 @@ const Footer = () => {
                 <NavLink to='https://www.instagram.com/happyhyep_day/'><img alt="instagram" src={instagram} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
                 <NavLink to="mailto:jhi2359@gmail.com" ><img alt="gmail" src={gmail} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
             </div>
-            <div className='copyright' style={{marginTop: '30px', fontFamily: 'AppleSdGothic', color: 'white', textAlign: 'center'}} >© 2023. Jeong Hye In. All rights reserved.</div>
+            <div className='copyright' style={{marginTop: '30px', fontFamily: 'applesdgothic', color: 'white', textAlign: 'center'}} >© 2023. Jeong Hye In. All rights reserved.</div>
         </div>
     )
 }

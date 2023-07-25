@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import {motion,  useScroll} from 'framer-motion';
 import profile from "../img/profile.png";
 import styled from "styled-components";
-import pic1 from "../img/그림1.png";
-import pic2 from "../img/그림2.png";
-import pic3 from "../img/그림3.png";
+import pic1 from "./../img/pic1.png";
+import pic2 from "./../img/pic2.png";
+import pic3 from "./../img/그림3.png";
 import Footer from "../components/Common/Footer";
 import "./Introduce.css";
 
@@ -98,9 +98,9 @@ export default function Introduce() {
                 <IntroduceText>단순한 코딩 뿐만 아니라 의사소통과 협업에서도 좋은 결과를 만들어낼 것입니다.</IntroduceText>
             </div>
             <div className="my-photo-list" style={{marginTop: '130px', display: "flex", justifyContent: 'center'}}>
-                <img alt="그림1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
-                <img alt="그림2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
-                <img alt="그림3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic1" src={pic1} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic2" src={pic2} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
+                <img alt="pic3" src={pic3} style={{width: "250px", margin: 'auto', marginLeft: '40px', marginRight: '40px'}}></img>
             </div>
             <div className="interested">
                 <Contact style={{fontSize: '25px', marginTop: '100px'}}>안녕하세요!</Contact>
@@ -155,14 +155,14 @@ const DashLine = styled.div`
     margin-top: 70px;
 `
 const IntroduceText = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 17px;
     color: #53354A;
     margin-top: 5px;
 `
 
 const Contact = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 20px;
     text-align: center;
     color: #53354A;
@@ -175,13 +175,13 @@ const Link = styled(NavLink)`
 `
 
 const Happyhyep = styled.div`
-    font-family: 'redemption';
+    font-family: iceJaram-Rg;
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 71px;
     text-align: center;
-    letter-spacing: 0.175em;
+    letter-spacing: 0.15em;
 `
 
 const Typing = styled.div`

@@ -1,22 +1,34 @@
 import { createGlobalStyle } from "styled-components";
-import NotoSansR from "./NotoSansRegular.otf"
-import AppleSDGothic from "./AppleSDGothicNeoR.ttf"
-import redemption from "./fonts/Redemption.ttf"
 
 const GlobalStyle = createGlobalStyle`
+    @charset "utf-8";
+    @font-face {
+        font-family: "applesdgothic", applesdgothic;
+        src: url("./applesdgothic.ttf") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+    };
+    @font-face {
+        font-family: 'iceJaram-Rg';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'UhBeeRice';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRice.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
 
     @font-face {
-        font-family: 'AppleSDGothic';
-        src: url(${AppleSDGothic}) format("ttff");
-        font-weight: normal;
+        font-family: 'Redemption';
         font-style: normal;
-    };
-    @font-face {
-        font-family: 'redemption';
-        src: url(${redemption}) format("ttff");
-        font-weight: normal;
-        font-style: normal;
-    };
+        font-weight: 400;
+        src: local('Redemption'), url('https://fonts.cdnfonts.com/s/23565/Redemption.woff') format('woff');
+    }
+        
+
 `
 
 export default GlobalStyle;

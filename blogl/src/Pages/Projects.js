@@ -198,7 +198,7 @@ const DashLine = styled.div`
 `
 
 const Happyhyep = styled.div`
-    font-family: 'redemption';
+    font-family: iceJaram-Rg;
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
@@ -208,14 +208,14 @@ const Happyhyep = styled.div`
 `
 
 const Title = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 30px;
     color: #53354A;
     margin-top: 30px;
 `
 
 const Text = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 15px;
     color: #53354A;
     margin-top: 5px;
