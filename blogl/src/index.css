@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @font-face {
   font-family: "applesdgothic";
   src: url("./../src/styles/fonts/applesdgothic.ttf") format("woff2");
