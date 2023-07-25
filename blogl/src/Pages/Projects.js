@@ -20,21 +20,22 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import VideoModal from "../components/VideoModal";
-
+const imageList = [
+    {src: focuz},
+    {src: bburing},
+    {src: eclipse},
+    {src: gallery},
+    {src: apartment},
+]
 export default function Projects(){
     const { scrollYProgress } = useScroll();
-
-    const videoRef= useRef();
-    const setPlayBackRate = () => {
-      videoRef.current.playbackRate = 1.6;
-    };
 
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       };
 
     const [isVideoModalOpen1, setIsVideoModalOpen1] = useState(false);
@@ -98,7 +99,7 @@ export default function Projects(){
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <VideoButton onClick={onVideoModalOpen1} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>VIDEO 보기 → </VideoButton>
                 </div>
-                {isVideoModalOpen1 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen1} video={focuz_video} /> : null}
+                {isVideoModalOpen1 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen1} video={focuz_video} pageNumber={1}/> : null}
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <GithubButton to='https://github.com/happyhyep/FOCUZ' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
@@ -133,7 +134,7 @@ export default function Projects(){
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <VideoButton onClick={onVideoModalOpen2} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>VIDEO 보기 → </VideoButton>
                 </div>
-                {isVideoModalOpen2 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen2} video={bburing_video} /> : null}
+                {isVideoModalOpen2 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen2} video={bburing_video} pageNumber={2}/> : null}
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <GithubButton to='https://github.com/happyhyep/BBuRing_log' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
@@ -168,7 +169,7 @@ export default function Projects(){
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <VideoButton onClick={onVideoModalOpen3} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>VIDEO 보기 → </VideoButton>
                 </div>
-                {isVideoModalOpen3 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen3} video={eclipse_video} /> : null}
+                {isVideoModalOpen3 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen3} video={eclipse_video} pageNumber={3}/> : null}
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <GithubButton to='https://github.com/happyhyep/Eclipse' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
@@ -201,7 +202,7 @@ export default function Projects(){
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <VideoButton onClick={onVideoModalOpen4} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>VIDEO 보기 → </VideoButton>
                 </div>
-                {isVideoModalOpen4 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen4} video={gallery_video} /> : null}
+                {isVideoModalOpen4 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen4} video={gallery_video} pageNumber={4}/> : null}
                 <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
                     <GithubButton to='https://github.com/happyhyep/gallery-web' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <img alt="github" src={github} style={{width: '16px', marginRight: '3px'}}></img>GITHUB</GithubButton>
@@ -223,8 +224,8 @@ export default function Projects(){
                         <Text style={{fontSize: '20px'}}>- 아파트 매매 실거래가를 확인할 수 있는 웹사이트</Text>
                         <Text><strong>Vanilla.js, 공공데이터 api, aws 배포</strong></Text>
                         <br />
-                        <Text>사진 찍는 것을 좋아하는 사람들을 위해</Text>
-                        <Text>웹사이트에 기록해둘 수 있는 웹사이트를 기획하였습니다.</Text>
+                        <Text>원하는 지역을 선택하여</Text>
+                        <Text>아파트의 매매 실거래가를 확인하고, 부동산 페이지로 넘어갈 수 있습니다.</Text>
                         <br />
                         <Text>프론트엔드 1명, api 크롤링 1명으로 진행하였습니다.</Text>
                         <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
@@ -283,6 +284,7 @@ const GithubButton = styled(NavLink)`
     color: #fff;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 30px;
 `
 const VideoButton = styled.button`
     border-radius: 5px;
