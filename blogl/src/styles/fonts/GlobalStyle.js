@@ -4,7 +4,7 @@ import applesdgothic from "./applesdgothic.ttf";
 import redemption from "./redemption.ttf";
 
 const GlobalStyle = createGlobalStyle`
-
+    @charset "utf-8";
     @font-face {
         font-family: "applesdgothic";
         src: url("./applesdgothic.ttf") format("woff2");
