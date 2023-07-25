@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.21a70a1e.css",
-    "main.js": "/blog/static/js/main.cd74cadb.js",
+    "main.css": "/blog/static/css/main.a5737d71.css",
+    "main.js": "/blog/static/js/main.6cb5b079.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
@@ -18,20 +18,17 @@
     "static/media/pic1.png": "/blog/static/media/pic1.928eaa0d586fd6e14a3e.png",
     "static/media/BBuRing.png": "/blog/static/media/BBuRing.de67786d169d6b31c211.png",
     "static/media/profile.png": "/blog/static/media/profile.b75d4b7530b2ea6f081a.png",
-    "static/media/redemption.ttf": "/blog/static/media/redemption.8313234d83d18c9e067f.ttf",
-    "static/media/redemption.woff": "/blog/static/media/redemption.a82ca0220801f129bbe0.woff",
-    "static/media/redemption.woff2": "/blog/static/media/redemption.9cb6cb02a19e13ecc34d.woff2",
     "static/media/instagram.png": "/blog/static/media/instagram.ed5ed57e98d053cf1e55.png",
     "static/media/github.png": "/blog/static/media/github.bcaf65c67ed8a714f267.png",
     "static/media/logo.png": "/blog/static/media/logo.de63aceb2c8b8f1ede28.png",
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
-    "main.21a70a1e.css.map": "/blog/static/css/main.21a70a1e.css.map",
-    "main.cd74cadb.js.map": "/blog/static/js/main.cd74cadb.js.map",
+    "main.a5737d71.css.map": "/blog/static/css/main.a5737d71.css.map",
+    "main.6cb5b079.js.map": "/blog/static/js/main.6cb5b079.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21a70a1e.css",
-    "static/js/main.cd74cadb.js"
+    "static/css/main.a5737d71.css",
+    "static/js/main.6cb5b079.js"
   ]
 }
