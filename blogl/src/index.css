@@ -7,6 +7,8 @@
 
 @font-face {
   font-family: "redemption";
+  font-style: normal;
+  font-weight: normal;
   src: url("./../src/styles/fonts/redemption.ttf") format("truetype"),
   url("./../src/styles/fonts/redemption.woff") format("woff"),
   url("./../src/styles/fonts/redemption.woff2") format("woff2");
