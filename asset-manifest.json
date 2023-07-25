@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.a5737d71.css",
-    "main.js": "/blog/static/js/main.d762bdcb.js",
+    "main.css": "/blog/static/css/main.4b00d84a.css",
+    "main.js": "/blog/static/js/main.cf966ba9.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
@@ -10,6 +10,9 @@
     "static/media/그림3.png": "/blog/static/media/그림3.76381cce5f59f103713d.png",
     "static/media/title.png": "/blog/static/media/title.f8a5f0bd810a0074ab0a.png",
     "static/media/gallery.mp4": "/blog/static/media/gallery.bf7e1892f26a62d35262.mp4",
+    "static/media/award3.png": "/blog/static/media/award3.a13d83ed6583868e2a9b.png",
+    "static/media/award1.png": "/blog/static/media/award1.8d71c40f3fe0d74f98df.png",
+    "static/media/award2.png": "/blog/static/media/award2.89d679cf88064f6f9365.png",
     "static/media/eclipse.png": "/blog/static/media/eclipse.e2bc868322ed7ce719ba.png",
     "static/media/gallery.png": "/blog/static/media/gallery.58ebc44bc043ab7db52b.png",
     "static/media/pic2.png": "/blog/static/media/pic2.0cf3d4e89f1ee8cba98f.png",
@@ -19,16 +22,21 @@
     "static/media/BBuRing.png": "/blog/static/media/BBuRing.de67786d169d6b31c211.png",
     "static/media/profile.png": "/blog/static/media/profile.b75d4b7530b2ea6f081a.png",
     "static/media/instagram.png": "/blog/static/media/instagram.ed5ed57e98d053cf1e55.png",
+    "static/media/award4.png": "/blog/static/media/award4.3fb1f16ccd603757ed36.png",
     "static/media/github.png": "/blog/static/media/github.bcaf65c67ed8a714f267.png",
     "static/media/logo.png": "/blog/static/media/logo.de63aceb2c8b8f1ede28.png",
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
+    "static/media/slick.svg": "/blog/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/blog/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/blog/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/blog/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/blog/index.html",
-    "main.a5737d71.css.map": "/blog/static/css/main.a5737d71.css.map",
-    "main.d762bdcb.js.map": "/blog/static/js/main.d762bdcb.js.map",
+    "main.4b00d84a.css.map": "/blog/static/css/main.4b00d84a.css.map",
+    "main.cf966ba9.js.map": "/blog/static/js/main.cf966ba9.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5737d71.css",
-    "static/js/main.d762bdcb.js"
+    "static/css/main.4b00d84a.css",
+    "static/js/main.cf966ba9.js"
   ]
 }
