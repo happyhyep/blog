@@ -175,7 +175,7 @@ const Link = styled(NavLink)`
 `
 
 const Happyhyep = styled.div`
-    font-family: redemption;
+    font-family: iceJaram-Rg;
     font-style: normal;
     font-weight: 400;
     font-size: 90px;

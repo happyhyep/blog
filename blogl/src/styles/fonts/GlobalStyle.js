@@ -1,7 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import NotoSansR from "./notosans.otf"
-import applesdgothic from "./applesdgothic.ttf";
-import redemption from "./redemption.ttf";
 
 const GlobalStyle = createGlobalStyle`
     @charset "utf-8";
@@ -12,6 +9,18 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
     };
     @font-face {
+        font-family: 'iceJaram-Rg';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'UhBeeRice';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRice.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+    @font-face {
         font-family: "redemption", redemption;
         font-weight: normal;
         font-style: normal;
@@ -21,13 +30,11 @@ const GlobalStyle = createGlobalStyle`
         url("./redemption.ttf") format("truetype");
     };
     @font-face {
-        font-family: "redemption", redemption;
+        font-family: 'Redemption';
         font-weight: 400;
         font-style: normal;
         transform: skew(-0.001deg);
-        src:url("./redemption.woff2") format("woff2"),
-        url("./redemption.woff") format("woff"),
-        url("./redemption.ttf") format("truetype");
+        src:url("https://fonts.cdnfonts.com/css/redemption") format("woff2"),
     };
 
 `
