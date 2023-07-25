@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
         url("./redemption.woff") format("woff"),
         url("./redemption.ttf") format("truetype");
     };
+
 `
 
 export default GlobalStyle;
