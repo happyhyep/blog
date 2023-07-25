@@ -155,14 +155,14 @@ const DashLine = styled.div`
     margin-top: 70px;
 `
 const IntroduceText = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 17px;
     color: #53354A;
     margin-top: 5px;
 `
 
 const Contact = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 20px;
     text-align: center;
     color: #53354A;
