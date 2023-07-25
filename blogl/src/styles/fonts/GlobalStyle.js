@@ -14,11 +14,9 @@ const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: "redemption";
         transform: skew(-0.001deg);
-        font-style: normal;
-        font-weight: normal;
-        src: url("./redemption.ttf") format("truetype"),
-        url("./redemption.woff2") format("woff2"),
-        url("./redemption.woff") format("woff");
+        src:url("./redemption.woff2") format("woff2"),
+        url("./redemption.woff") format("woff"),
+        url("./redemption.ttf") format("truetype");
     };
 `
 
