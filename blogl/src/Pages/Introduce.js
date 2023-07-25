@@ -178,10 +178,10 @@ const Happyhyep = styled.div`
     font-family: iceJaram-Rg;
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 71px;
     text-align: center;
-    letter-spacing: 0.175em;
+    letter-spacing: 0.15em;
 `
 
 const Typing = styled.div`
