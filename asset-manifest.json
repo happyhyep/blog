@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.d9a648e5.css",
-    "main.js": "/blog/static/js/main.ceebb4e9.js",
+    "main.css": "/blog/static/css/main.21a70a1e.css",
+    "main.js": "/blog/static/js/main.cd74cadb.js",
     "static/js/787.c335d2a7.chunk.js": "/blog/static/js/787.c335d2a7.chunk.js",
     "static/media/구현영상.mp4": "/blog/static/media/구현영상.706b44bfa0f87e37eef0.mp4",
     "static/media/BBuRing.mp4": "/blog/static/media/BBuRing.7e08dd41fc24cb0fa788.mp4",
     "static/media/eclipse.mp4": "/blog/static/media/eclipse.ed866deca94b0fac2cfd.mp4",
-    "static/media/notosans.otf": "/blog/static/media/notosans.77c135a2d8b8f3b01cd0.otf",
     "static/media/applesdgothic.ttf": "/blog/static/media/applesdgothic.d159b4d4ce2ef2592daa.ttf",
     "static/media/그림3.png": "/blog/static/media/그림3.76381cce5f59f103713d.png",
     "static/media/title.png": "/blog/static/media/title.f8a5f0bd810a0074ab0a.png",
@@ -27,12 +26,12 @@
     "static/media/logo.png": "/blog/static/media/logo.de63aceb2c8b8f1ede28.png",
     "static/media/gmail.png": "/blog/static/media/gmail.2e4a459c8226535b39e8.png",
     "index.html": "/blog/index.html",
-    "main.d9a648e5.css.map": "/blog/static/css/main.d9a648e5.css.map",
-    "main.ceebb4e9.js.map": "/blog/static/js/main.ceebb4e9.js.map",
+    "main.21a70a1e.css.map": "/blog/static/css/main.21a70a1e.css.map",
+    "main.cd74cadb.js.map": "/blog/static/js/main.cd74cadb.js.map",
     "787.c335d2a7.chunk.js.map": "/blog/static/js/787.c335d2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9a648e5.css",
-    "static/js/main.ceebb4e9.js"
+    "static/css/main.21a70a1e.css",
+    "static/js/main.cd74cadb.js"
   ]
 }
