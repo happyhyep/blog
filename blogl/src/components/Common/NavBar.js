@@ -36,7 +36,7 @@ const TopMenu = styled.div`
 
 const NavTextLogo = styled(NavLink)`
     text-decoration: none;
-
+    font-family: redemption;
 
   .animated-text {
     color: transparent;
@@ -106,7 +106,7 @@ const NavText = styled(NavLink)`
     align-items: center;
 
     font-size: 16px;
-    font-family: AppleSDGothic;
+    font-family: redemption;
     color: rgb(0,0,0);
     text-decoration: none;
 `;
