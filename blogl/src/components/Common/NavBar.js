@@ -116,7 +116,7 @@ const Happyhyep = styled.div`
     align-items: center;
     letter-spacing: 0.09em;
 
-    font-family: 'redemption';
+    font-family: redemption;
 
     font-weight: 400;
     font-size: 60px;

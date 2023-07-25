@@ -110,7 +110,7 @@ export default function Home(){
 
 
 const Happyhyep = styled.div` 
-    font-family: 'redemption';
+    font-family: redemption;
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
@@ -119,7 +119,7 @@ const Happyhyep = styled.div`
     letter-spacing: 0.175em;
 `
 const Contact = styled.div`
-    font-family: AppleSDGothic;
+    font-family: applesdgothic;
     font-size: 20px;
     color: #53354A;
     margin-top: 5px;
