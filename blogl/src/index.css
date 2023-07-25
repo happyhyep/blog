@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "applesdgothic";
+  src: url("./../src/styles/fonts/applesdgothic.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "redemption";
+  src: url("./../src/styles/fonts/redemption.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "redemption";
+  src: url("./../src/styles/fonts/notosans.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+};
+
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
