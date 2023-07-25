@@ -23,11 +23,11 @@ const GlobalStyle = createGlobalStyle`
 
     @font-face {
         font-family: 'Redemption';
-        font-weight: normal;
         font-style: normal;
-        transform: skew(-0.001deg);
-        src: url("https://fonts.cdnfonts.com/css/redemption") format("woff2");
-    };
+        font-weight: 400;
+        src: local('Redemption'), url('https://fonts.cdnfonts.com/s/23565/Redemption.woff') format('woff');
+    }
+        
 
 `
 
