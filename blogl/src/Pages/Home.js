@@ -57,6 +57,7 @@ export default function Home(){
       // 반복문을 돌려 모든 DOM에 적용
       textAnimationList.forEach(el => observer.observe(el));
       imageAnimationList.forEach(el => observer.observe(el));
+
     return (
         <>
             <GlobalStyle />
