@@ -42,7 +42,7 @@ export default function Introduce() {
     const options = {
         root: null,
         rootMargin: "0px",
-        threshold: .1, 
+        threshold: .1,
       }
       
       const observer = new IntersectionObserver(entries => {
