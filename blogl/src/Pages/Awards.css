@@ -1,0 +1,21 @@
+.award4-box {
+    transform: translateX(20%);
+    opacity: 0.1;
+    transition: .8s;
+}
+
+.award4-box.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.award3-box {
+    transform: translateX(20%);
+    opacity: 0;
+    transition: .8s;
+}
+
+.award3-box.active {
+    transform: translateX(0);
+    opacity: 1;
+}

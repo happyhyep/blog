@@ -5,7 +5,6 @@
 }
 
 .aaa.active{
-
     transform: translateX(0);
     opacity: 1;
 }
