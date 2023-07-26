@@ -1,8 +1,8 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import NavBar from "../components/Common/NavBar";
 import Footer from "../components/Common/Footer";
 import styled from "styled-components";
-import {motion,  useScroll, useInView} from 'framer-motion';
+import {motion,  useScroll} from 'framer-motion';
 import focuz from '../img/projects/focuz.png';
 import focuz_video from "../img/projects/구현영상.mp4";
 import bburing from "../img/projects/BBuRing.png";
@@ -20,22 +20,42 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import VideoModal from "../components/VideoModal";
-const imageList = [
-    {src: focuz},
-    {src: bburing},
-    {src: eclipse},
-    {src: gallery},
-    {src: apartment},
-]
+
 export default function Projects(){
     const { scrollYProgress } = useScroll();
 
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "black", zIndex: "9999999", left: "0"}}
+            onClick={onClick}
+          />
+        );
+      }
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "black", zIndex: "9999999", right: "0"}}
+            onClick={onClick}
+          />
+        );
+      }
+    
+
+      
     const settings = {
+        arrow: true,
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow /> 
       };
 
     const [isVideoModalOpen1, setIsVideoModalOpen1] = useState(false);
