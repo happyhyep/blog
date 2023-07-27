@@ -7,7 +7,7 @@ import award2 from "../img/award2.png";
 import award3 from "../img/award3.png";
 import award4 from "../img/award4.png";
 import {motion, useScroll} from 'framer-motion';
-import './Awards.css';
+// import './Awards.css';
 
 export default function Awards(){
     const { scrollYProgress } = useScroll();
@@ -18,28 +18,28 @@ export default function Awards(){
         threshold: .7, 
     }
       
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            console.log("active");
-            entry.target.classList.add('active');
-          } else {
-            console.log("no")
-            entry.target.classList.remove('active');
-          }
-        });
-      }, options);
+    // const observer = new IntersectionObserver(entries => {
+    //     entries.forEach(entry => {
+    //       if (entry.isIntersecting) {
+    //         console.log("active");
+    //         entry.target.classList.add('active');
+    //       } else {
+    //         console.log("no")
+    //         entry.target.classList.remove('active');
+    //       }
+    //     });
+    //   }, options);
 
-      const award4Box = document.querySelectorAll('.award4-box');
-      const award3Box = document.querySelectorAll('.award3-box');
-      const award2Box = document.querySelectorAll('.award2-box');
-      const award1Box = document.querySelectorAll('.award1-box');
+    //   const award4Box = document.querySelectorAll('.award4-box');
+    //   const award3Box = document.querySelectorAll('.award3-box');
+    //   const award2Box = document.querySelectorAll('.award2-box');
+    //   const award1Box = document.querySelectorAll('.award1-box');
 
 
-      award4Box.forEach(el => observer.observe(el));
-      award3Box.forEach(el => observer.observe(el));
-      award2Box.forEach(el => observer.observe(el));
-      award1Box.forEach(el => observer.observe(el));
+    //   award4Box.forEach(el => observer.observe(el));
+    //   award3Box.forEach(el => observer.observe(el));
+    //   award2Box.forEach(el => observer.observe(el));
+    //   award1Box.forEach(el => observer.observe(el));
 
 
 
