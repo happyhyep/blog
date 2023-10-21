@@ -3,6 +3,7 @@ import NavBar from "../components/Common/NavBar";
 import Footer from "../components/Common/Footer";
 import styled from "styled-components";
 import {motion,  useScroll} from 'framer-motion';
+import nfmtrd2023 from '../img/projects/nfm-trd-2023.png';
 import focuz from '../img/projects/focuz.png';
 import focuz_video from "../img/projects/구현영상.mp4";
 import bburing from "../img/projects/BBuRing.png";
@@ -98,6 +99,36 @@ export default function Projects(){
             </div>
 
             <Slider {...settings}>
+
+            {/* ---- 국립 민속 박물관 프로젝트 ---- */}
+            <div className="project1">
+                <div style={{display:'flex', justifyContent: 'center'}}>
+                    <img alt="nfm-trd-2023" src={nfmtrd2023} style={{width: '500px'}}></img>
+                    <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
+                        <Title><strong>기억 박물관 - 내 추억에 놀러와</strong></Title>
+                        <Text style={{fontSize: '20px'}}>- 추억 기록 모바일 웹컨텐츠</Text>
+                        <Text>(실 사용자 2만명)</Text>
+                        <Text><strong>Vue.js, Typescript, Sass, Node.js, PostgreSQL</strong>, AWS, Figma</Text>
+                        <br />
+                        <Text>국립 민속 박물관 제 3관에서 진행한 웹 컨텐츠로,</Text>
+                        <Text>중장년층을 타겟으로 추억을 기록하는 웹 사이트를 개발 및 배포하였습니다.</Text>
+                        <br />
+                        <Text>개발자 3명, 디자이너 2명, 기획자 1명, 개발 멘토 1명으로 진행하였습니다.</Text>
+                        <Text style={{fontSize: '13px', fontStyle: 'bold'}}>그 중 저는 개발 <strong>PL(프로젝트 리더)</strong>로, 프론트엔드, 백엔드, DB를 맡아</Text>
+                        <Text style={{fontSize: '13px'}}>초기 프론트엔드 개발 세팅, 닉네임/연령대 입력 페이지 프론트엔드, 유물 선택 페이지 프론트엔드, 기록 페이지 프론트엔드, 결과 페이지 프론트엔드/백엔드, 공유 페이지 프론트엔드/백엔드를 개발하였습니다.</Text>
+                    </div>
+                </div>
+                {/* <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                    <VideoButton onClick={onVideoModalOpen1} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>VIDEO 보기 → </VideoButton>
+                </div> */}
+                {isVideoModalOpen1 ? <VideoModal setIsVideoModalOpen={setIsVideoModalOpen1} video={focuz_video} pageNumber={1}/> : null}
+                <div style={{display: 'flex', justifyContent: 'end', marginTop: '5px', marginRight: '50px'}}>
+                    <GithubButton to='https://nfm-trd-2023.apoc.day/#/' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        Web Page →</GithubButton>
+                </div>
+            </div>
+
+
             {/* ---- focuz 프로젝트 ---- */}
             <div className="project1">
                 <div style={{display:'flex', justifyContent: 'center'}}>
@@ -105,12 +136,13 @@ export default function Projects(){
                     <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
                         <Title><strong>FOCUZ</strong></Title>
                         <Text style={{fontSize: '20px'}}>- 얼굴인식 캠스터디 웹사이트</Text>
+                        <Text>(경희대 소프트웨어융합대학 동아리대항전 1위)</Text>
                         <Text><strong>React.js, Tensorflow, kakao oauth,</strong> Spring, MySQL, redis</Text>
                         <br />
                         <Text>기존 화상 회의 프로그램 및 공부 프로그램과 차별화 하여</Text>
                         <Text>얼굴 인식된 시간을 측정하여 공부 집중도를 분석합니다.</Text>
                         <br />
-                        <Text>프론트엔드 2명, 백엔드 2명으로 진행하였습니다.</Text>
+                        <Text>프론트엔드 2명, 백엔드 2명, 멘토 2명으로 진행하였습니다.</Text>
                         <Text style={{fontSize: '13px'}}>그 중 저는 프론트엔드에서</Text>
                         <Text style={{fontSize: '13px'}}>페이지 라우팅, 회원가입/로그인-kakao auth, 공부하기 페이지-tensorflow 라이브러리 활용, 친구/그룹 추가/목록 페이지 - 페이지,
                             컴포넌트 개발, 스터디 그룹 생성 페이지, 분석 페이지(캘린더 날짜 설정, 시간 그래프화)를 구현하였습니다.</Text>
@@ -140,7 +172,7 @@ export default function Projects(){
                     <div style={{marginTop: '20px', marginLeft: '40px', width: '450px'}}>
                         <Title><strong>BBuRing_log</strong></Title>
                         <Text style={{fontSize: '20px'}}>- 전국 뿌링클 맛집 기록 웹사이트</Text>
-                        <Text><strong>React.js, Docker</strong> Spring, Python, MySQL</Text>
+                        <Text><strong>React.js, Docker,</strong> Spring, Python, MySQL</Text>
                         <br />
                         <Text>전국 뿌링클 맛집 탐방을 위해</Text>
                         <Text>각 매장 별로 리뷰를 기록해둘 수 있습니다.</Text>
