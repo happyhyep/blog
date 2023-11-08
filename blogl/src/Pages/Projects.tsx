@@ -3,16 +3,16 @@ import NavBar from "../components/Common/NavBar";
 import Footer from "../components/Common/Footer";
 import styled from "styled-components";
 import {motion,  useScroll} from 'framer-motion';
-import nfmtrd2023 from '../img/projects/nfm-trd-2023.png';
-import focuz from '../img/projects/focuz.png';
-import focuz_video from "../img/projects/구현영상.mp4";
-import bburing from "../img/projects/BBuRing.png";
-import bburing_video from "../img/projects/BBuRing.mp4";
-import eclipse from "../img/projects/eclipse.png";
-import eclipse_video from "../img/projects/eclipse.mp4";
-import gallery from "../img/projects/gallery.png";
-import gallery_video from "../img/projects/gallery.mp4";
-import apartment from "../img/projects/apartment.png";
+import nfmtrd2023 from 'src/assets/images/projects/nfm-trd-2023.png';
+import focuz from 'src/assets/images/projects/focuz.png';
+import focuz_video from "src/assets/images/projects/구현영상.mp4";
+import bburing from "src/assets/images/projects/BBuRing.png";
+import bburing_video from "src/assets/images/projects/BBuRing.mp4";
+import eclipse from "src/assets/images/projects/eclipse.png";
+import eclipse_video from "src/assets/images/projects/eclipse.mp4";
+import gallery from "src/assets/images/projects/gallery.png";
+import gallery_video from "src/assets/images/projects/gallery.mp4";
+import apartment from "src/assets/images/projects/apartment.png";
 import github from "../icons/github.png";
 import { NavLink } from "react-router-dom";
 
@@ -25,7 +25,7 @@ import VideoModal from "../components/VideoModal";
 export default function Projects(){
     const { scrollYProgress } = useScroll();
 
-    function SamplePrevArrow(props) {
+    function SamplePrevArrow(props: any) {
         const { className, style, onClick } = props;
         return (
           <div
@@ -35,7 +35,7 @@ export default function Projects(){
           />
         );
       }
-    function SampleNextArrow(props) {
+    function SampleNextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
           <div

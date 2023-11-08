@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import GlobalStyle from '../../styles/fonts/GlobalStyle';
-import logo from '../../img/logo.png'
+import GlobalStyle from 'src/styles/fonts/GlobalStyle.js';
 
 const NavBar = () => {
 

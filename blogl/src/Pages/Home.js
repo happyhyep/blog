@@ -3,9 +3,9 @@ import styled from "styled-components";
 import GlobalStyle from "../styles/fonts/GlobalStyle";
 import {motion,  useScroll, useInView} from 'framer-motion';
 import NavBar from "../components/Common/NavBar";
-import title from "../img/title.png";
+import title from "src/assets/images/title.png";
 import Footer from "../components/Common/Footer";
-import pic3 from "../img/그림3.png";
+import pic3 from "src/assets/images/그림3.png";
 import { NavLink } from "react-router-dom";
 import './Home.css';
 

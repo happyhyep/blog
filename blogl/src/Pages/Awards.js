@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "../components/Common/NavBar";
-import Footer from "../components/Common/Footer";
+import NavBar from "src/components/Common/NavBar";
+import Footer from "src/components/Common/Footer";
 import styled from "styled-components";
-import award1 from "../img/award1.png";
-import award2 from "../img/award2.png";
-import award3 from "../img/award3.png";
-import award4 from "../img/award4.png";
+import award1 from "src/assets/images/award1.png";
+import award2 from "src/assets/images/award2.png";
+import award3 from "src/assets/images/award3.png";
+import award4 from "src/assets/images/award4.png";
 import {motion, useScroll} from 'framer-motion';
 // import './Awards.css';
 

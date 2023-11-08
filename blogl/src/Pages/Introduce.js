@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
 import {motion,  useScroll} from 'framer-motion';
-import profile from "../img/profile.png";
+import profile from "src/assets/images/profile.png";
 import styled from "styled-components";
-import pic1 from "./../img/pic1.png";
-import pic2 from "./../img/pic2.png";
-import pic3 from "./../img/그림3.png";
+import pic1 from "src/assets/images/pic1.png";
+import pic2 from "src/assets/images/pic2.png";
+import pic3 from "src/assets/images/그림3.png";
 import Footer from "../components/Common/Footer";
 import "./Introduce.css";
 
