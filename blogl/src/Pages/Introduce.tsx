@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
 import {motion,  useScroll} from 'framer-motion';
-import profile from "src/assets/images/profile.png";
+import profile_image_8 from "src/assets/images/profile_image/profile_image_8.jpg";
 import styled from "styled-components";
-import pic1 from "src/assets/images/pic1.png";
-import pic2 from "src/assets/images/pic2.png";
+import pic1 from "src/assets/images/profile_image/profile_image_2.jpg";
+import pic2 from "src/assets/images/profile_image/profile_image_4.jpg";
 import pic3 from "src/assets/images/그림3.png";
 import Footer from "../components/Common/Footer";
 import "./Introduce.css";
@@ -78,7 +78,7 @@ export default function Introduce() {
                         transform: 'translate3d(0, 0, 0)',
                         background: '#ffd400'
             }} />
-            <div className="introduce-profile-image" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><motion.img alt="profile" src={profile} style={{width: '500px'}}></motion.img></div>
+            <div className="introduce-profile-image" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}><motion.img alt="profile_image_8" src={profile_image_8} style={{width: '500px'}}></motion.img></div>
             <motion.div className="introduce-profile-name" style={{display:"flex", justifyContent: 'center', marginTop:'70px', marginBottom: '80px'}}>
                 <Happyhyep>Jeong Hye In</Happyhyep>
             </motion.div>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import NavBar from "@src/components/Common/NavBar";
-import Footer from "@src/components/Common/Footer";
+import NavBar from "src/components/Common/NavBar";
+import Footer from "src/components/Common/Footer";
 
 export default function Gallery(){
     return (
