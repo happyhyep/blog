@@ -6,7 +6,7 @@ import profile_image_8 from "src/assets/images/profile_image/profile_image_8.jpg
 import styled from "styled-components";
 import pic1 from "src/assets/images/profile_image/profile_image_2.jpg";
 import pic2 from "src/assets/images/profile_image/profile_image_4.jpg";
-import pic3 from "src/assets/images/그림3.png";
+import pic3 from "src/assets/images/profile_image/profile_image_3.jpg";
 import Footer from "../components/Common/Footer";
 import "./Introduce.css";
 

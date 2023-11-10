@@ -5,7 +5,7 @@ import {motion,  useScroll, useInView} from 'framer-motion';
 import NavBar from "../components/Common/NavBar";
 import title from "src/assets/images/title.png";
 import Footer from "../components/Common/Footer";
-import pic3 from "src/assets/images/그림3.png";
+import pic3 from "src/assets/images/profile_image/profile_image_3.jpg";
 import { NavLink } from "react-router-dom";
 import './Home.css';
 
