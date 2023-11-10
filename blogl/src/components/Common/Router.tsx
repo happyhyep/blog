@@ -13,7 +13,7 @@ export default function Router() {
         <BrowserRouter>
             <ScrollToTop />
             <Routes>
-                <Route exact path={process.env.PUBLIC_URL + '/'} element={<Home />} />
+                <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
                 <Route path={process.env.PUBLIC_URL + '/introduce'} element={<Introduce />} />
                 <Route path={process.env.PUBLIC_URL + '/awards'} element={<Awards />} />
                 <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />} />

@@ -27,7 +27,7 @@ export default function Introduce() {
                 setCount((prev) => count + 1);
                 return result;
             });
-        }, 150) : null
+        }, 150): undefined
         if (count === completedTitle.length) {
             setTimeout(() => {
                 clearInterval(interval);

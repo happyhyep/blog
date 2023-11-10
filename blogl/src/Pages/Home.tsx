@@ -25,7 +25,7 @@ export default function Home(){
                 setCount((prev) => count + 1);
                 return result;
             });
-        }, 150) : null
+        }, 150) : undefined
         if (count === completedTitle.length) {
             setTimeout(() => {
                 clearInterval(interval);
