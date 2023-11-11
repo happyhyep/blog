@@ -2,12 +2,11 @@ import React from "react";
 import NavBar from "src/components/Common/NavBar";
 import Footer from "src/components/Common/Footer";
 import styled from "styled-components";
-import award_sanjose from "src/assets/images/awards/award_sanjose.png";
-import award_dcom from "src/assets/images/awards/award_dcom.png";
-import award_edu from "src/assets/images/awards/award_edu.png";
-import award_money from "src/assets/images/awards/award_money.png";
+import award_sanjose from "src/assets/images/awards/award_sanjose.webp";
+import award_dcom from "src/assets/images/awards/award_dcom.webp";
+import award_edu from "src/assets/images/awards/award_edu.webp";
+import award_money from "src/assets/images/awards/award_money.webp";
 import {motion, useScroll} from 'framer-motion';
-// import './Awards.css';
 
 export default function Awards(){
     const { scrollYProgress } = useScroll();
@@ -59,13 +58,13 @@ export default function Awards(){
                         transform: 'translate3d(0, 0, 0)',
                         background: '#000000',
             }} />
-            <div style={{display: "flex", justifyContent: 'center'}}>
+            <div className="award-box-container">
                 <Box className="award4-box">
                     <AwardImg alt="award_money" src={award_money}></AwardImg>
                     <div style={{display:"flex", justifyContent: 'center', marginBottom: '3%'}}>성적우수 장학, 밝은사회 장학, SW중심대학 장학 ... 외 다수 장학 수혜</div>
                 </Box>
             </div>
-            <div style={{display: "flex", justifyContent: 'center'}}>
+            <div className="award-box-container">
                 <Box className="award3-box">
                     <AwardImg alt="award_sanjose" src={award_sanjose}></AwardImg>
                     <div style={{display:"flex", justifyContent: 'center', marginBottom: '3%'}}>2023 San Jose State University Enterpreneurship Award 최우수</div>

@@ -3,21 +3,22 @@ import styled from "styled-components";
 import GlobalStyle from "../styles/fonts/GlobalStyle";
 import {motion,  useScroll, useInView} from 'framer-motion';
 import NavBar from "../components/Common/NavBar";
-import title from "src/assets/images/title.png";
+import title from "src/assets/images/title.webp";
 import Footer from "../components/Common/Footer";
-import pic3 from "src/assets/images/profile_image/profile_image_3.jpg";
+import pic3 from "src/assets/images/profile_image/profile_image_3.webp";
 import { NavLink } from "react-router-dom";
-import './Home.css';
+import '../assets/css/Home.css';
+import {introduceRandomTextList} from "src/lib/introduceRandomTextList";
 
 export default function Home(){
     const { scrollYProgress } = useScroll();
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
+    // const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
       
     useEffect(() => {
-        const completedTitle = textList[textNum];
+        const completedTitle = introduceRandomTextList[textNum];
 
         const interval = (count<=(completedTitle.length-1)) ? setInterval(()=>{
             setLandingTitle((prev) => {
@@ -30,7 +31,7 @@ export default function Home(){
             setTimeout(() => {
                 clearInterval(interval);
                 setLandingTitle("");
-                textNum===textList.length-1 ? setTextNum(0) : setTextNum(textNum+1);
+                textNum===introduceRandomTextList.length-1 ? setTextNum(0) : setTextNum(textNum+1);
                 setCount(0);
             }, 1000);
         }

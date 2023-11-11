@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../components/Common/NavBar"
 import { NavLink } from "react-router-dom";
 import {motion,  useScroll} from 'framer-motion';
-import profile_image_8 from "src/assets/images/profile_image/profile_image_8.jpg";
+import profile_image_8 from "src/assets/images/profile_image/profile_image_8.webp";
 import styled from "styled-components";
-import pic1 from "src/assets/images/profile_image/profile_image_2.jpg";
-import pic2 from "src/assets/images/profile_image/profile_image_4.jpg";
-import pic3 from "src/assets/images/profile_image/profile_image_3.jpg";
+import pic1 from "src/assets/images/profile_image/profile_image_2.webp";
+import pic2 from "src/assets/images/profile_image/profile_image_4.webp";
+import pic3 from "src/assets/images/profile_image/profile_image_3.webp";
 import Footer from "../components/Common/Footer";
-import "./Introduce.css";
+import "../assets/css/Introduce.css";
 
 export default function Introduce() {
     const { scrollYProgress } = useScroll();

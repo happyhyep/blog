@@ -1,5 +1,6 @@
 import './App.css';
-import Router from './components/Common/Router';
+import '../src/assets/css/App.scss';
+import Router from './router';
 import GlobalStyle from './styles/fonts/GlobalStyle';
 
 function App() {

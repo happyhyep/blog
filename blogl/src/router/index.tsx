@@ -1,12 +1,12 @@
 import React from "react"
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "../../Pages/Home";
-import Introduce from "../../Pages/Introduce";
-import Awards from "../../Pages/Awards";
-import Projects from "../../Pages/Projects";
-import Activities from "../../Pages/Activity";
-import Gallery from "../../Pages/Gallery";
-import ScrollToTop from "./ScorollToTop";
+import Home from "../Pages/Home";
+import Introduce from "../Pages/Introduce";
+import Awards from "../Pages/Awards";
+import Projects from "../Pages/Projects";
+import Activities from "../Pages/Activity";
+import Gallery from "../Pages/Gallery";
+import ScrollToTop from "../components/Common/ScorollToTop";
 
 export default function Router() {
     return(

@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import github from '../../icons/github.png';
-import instagram from '../../icons/instagram.png';
-import gmail from '../../icons/gmail.png';
+import github from '../../assets/icons/github.webp';
+import instagram from '../../assets/icons/instagram.webp';
+import velog from '../../assets/icons/velog.webp';
 
 const Footer = () => {
     return (
-        <div className='Footer' style={{backgroundColor: 'black', height: '175px', marginTop: '120px'}}>
-            <div className='footer-icons' style={{display: 'flex', justifyContent: 'space-between', margin: 'auto', width: '200px'}}>
-                <NavLink to='https://github.com/happyhyep'><img alt="github" src={github} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
-                <NavLink to='https://www.instagram.com/happyhyep_day/'><img alt="instagram" src={instagram} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
-                <NavLink to="mailto:jhi2359@gmail.com" ><img alt="gmail" src={gmail} style={{width: '45px', marginTop: '40px'}}></img></NavLink>
+        <div className='footer'>
+            <div className='footer-icon-container'>
+                <NavLink to='https://github.com/happyhyep'><img className='footer-icon-image' alt="github" src={github} ></img></NavLink>
+                <NavLink to='https://www.instagram.com/happyhyep_day/'><img className='footer-icon-image' alt="instagram" src={instagram}></img></NavLink>
+                <NavLink to="https://velog.io/@happyhyep" ><img className='footer-icon-image' alt="velog" src={velog} ></img></NavLink>
             </div>
-            <div className='copyright' style={{marginTop: '30px', fontFamily: 'applesdgothic', color: 'white', textAlign: 'center'}} >© 2023. Jeong Hye In. All rights reserved.</div>
+            <div className='copyright' >© 2023. Jeong Hye In. All rights reserved.</div>
         </div>
     )
 }

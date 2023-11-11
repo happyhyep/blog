@@ -1,10 +1,15 @@
+.award-box-container{
+    display: flex;
+    justify-content: center;
+}
+
 .award4-box {
     transform: translateX(20%);
     opacity: 0.1;
     transition: .8s;
 }
 
-.award4-box.active {
+.award4-box:active {
     transform: translateX(0);
     opacity: 1;
 }
