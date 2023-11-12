@@ -9,6 +9,7 @@ import pic2 from "src/assets/images/profile_image/profile_image_4.webp";
 import pic3 from "src/assets/images/profile_image/profile_image_3.webp";
 import Footer from "../components/Common/Footer";
 import "../assets/css/Introduce.css";
+import {introduceRandomTextList} from "src/lib/introduceRandomTextList";
 
 export default function Introduce() {
     const { scrollYProgress } = useScroll();
@@ -16,7 +17,7 @@ export default function Introduce() {
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는", "주위 사람들까지 행복하게 만드는", "매순간 후회 없이 살아가는", "익숙함에 속지 않는"];
+    const textList = introduceRandomTextList;
       
     useEffect(() => {
         const completedTitle = textList[textNum];

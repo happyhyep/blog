@@ -9,50 +9,16 @@ import pic3 from "src/assets/images/profile_image/profile_image_3.webp";
 import { NavLink } from "react-router-dom";
 import '../assets/css/Home.css';
 import {introduceRandomTextList} from "src/lib/introduceRandomTextList";
+import {observer} from "src/lib/worker/IntersectionObserver";
 
 export default function Home(){
     const { scrollYProgress } = useScroll();
     const [landingTitle, setLandingTitle] = useState("");
     const [count, setCount] = useState(0);
     const [textNum, setTextNum] = useState(0);
-    // const textList = ["행복하게 매순간 최선을 다하는", "항상 열정이 넘치는", "긍정적으로 사고하는", "사용자의 편의를 생각하는"];
-      
-    useEffect(() => {
-        const completedTitle = introduceRandomTextList[textNum];
 
-        const interval = (count<=(completedTitle.length-1)) ? setInterval(()=>{
-            setLandingTitle((prev) => {
-                let result = prev ? prev + completedTitle[count] : completedTitle[0];
-                setCount((prev) => count + 1);
-                return result;
-            });
-        }, 150) : undefined
-        if (count === completedTitle.length) {
-            setTimeout(() => {
-                clearInterval(interval);
-                setLandingTitle("");
-                textNum===introduceRandomTextList.length-1 ? setTextNum(0) : setTextNum(textNum+1);
-                setCount(0);
-            }, 1000);
-        }
-        return () => clearInterval(interval); 
-    }, [count])
 
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: .7, 
-      }
-      
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          } else {
-            entry.target.classList.remove('active');
-          }
-        });
-      }, options);
+
       const textAnimationList = document.querySelectorAll('.aaa');
       const imageAnimationList = document.querySelectorAll('.profile');
       // 반복문을 돌려 모든 DOM에 적용

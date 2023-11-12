@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import NavBar from "src/components/Common/NavBar";
 import Footer from "src/components/Common/Footer";
 import styled from "styled-components";
@@ -7,38 +7,20 @@ import award_dcom from "src/assets/images/awards/award_dcom.webp";
 import award_edu from "src/assets/images/awards/award_edu.webp";
 import award_money from "src/assets/images/awards/award_money.webp";
 import {motion, useScroll} from 'framer-motion';
+import {observer} from "src/lib/worker/IntersectionObserver";
 
 export default function Awards(){
     const { scrollYProgress } = useScroll();
-    
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: .7, 
-    }
-      
-    // const observer = new IntersectionObserver(entries => {
-    //     entries.forEach(entry => {
-    //       if (entry.isIntersecting) {
-    //         console.log("active");
-    //         entry.target.classList.add('active');
-    //       } else {
-    //         console.log("no")
-    //         entry.target.classList.remove('active');
-    //       }
-    //     });
-    //   }, options);
 
-    //   const award4Box = document.querySelectorAll('.award4-box');
-    //   const award3Box = document.querySelectorAll('.award3-box');
-    //   const award2Box = document.querySelectorAll('.award2-box');
-    //   const award1Box = document.querySelectorAll('.award1-box');
+    // TODO redux로 관리해서 InsertsectionObserver 함수에서 상태 변화시키기
+    const [isBoxShown, setIsBoxShown] = useState(false);
 
 
-    //   award4Box.forEach(el => observer.observe(el));
-    //   award3Box.forEach(el => observer.observe(el));
-    //   award2Box.forEach(el => observer.observe(el));
-    //   award1Box.forEach(el => observer.observe(el));
+
+      const award4Box = document.querySelectorAll('.award-box-container');
+
+
+      award4Box.forEach(el => observer.observe(el));
 
 
 
@@ -58,7 +40,7 @@ export default function Awards(){
                         transform: 'translate3d(0, 0, 0)',
                         background: '#000000',
             }} />
-            <div className="award-box-container">
+            <div className={`award-box-container ${isBoxShown ? '' : 'active'}`}>
                 <Box className="award4-box">
                     <AwardImg alt="award_money" src={award_money}></AwardImg>
                     <div style={{display:"flex", justifyContent: 'center', marginBottom: '3%'}}>성적우수 장학, 밝은사회 장학, SW중심대학 장학 ... 외 다수 장학 수혜</div>
