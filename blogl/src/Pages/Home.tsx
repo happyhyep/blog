@@ -51,7 +51,7 @@ export default function Home(){
                         ease: [0, 0.2, 0.5, 1.01]
                       }}></motion.img>
                 <div className="profile-box" style={{display: "flex", marginTop:'200px', marginBottom: '10px', marginLeft: '15%', marginRight: '15%', justifyContent:'space-between'}}>
-                    <div className="profile" style={{}}>
+                    <div className="profile">
                         <img alt="pic3" src={pic3} style={{width: '500px', borderRadius: '70px'}}></img>
                     </div>
                 
